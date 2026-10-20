@@ -10,48 +10,53 @@ html,body{width:100%;height:100%;overflow:hidden;background:#ffffff;color:#00000
 font-family:"Helvetica Neue",Helvetica,Arial,"Heiti SC","STHeiti","Microsoft YaHei",sans-serif;
 -webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;user-select:none}
 
-/* 版面按 Kindle 竖屏视口 1072x1448 设计（Kindle 实验浏览器锁竖屏，不随设备旋转），
-   由 JS 自适应缩放到任意视口（手机/电脑预览时完整可见） */
-#page{position:absolute;top:0;left:0;width:1072px;height:1448px;
+/* 版面宽固定 1072（Kindle 竖屏视口宽）；高度由 JS 按实测视口设定：
+   Kindle 浏览器视口实测约 1072x1268（顶部功能条占约 180px），
+   底部另有约 40px 常驻滚动条区，故页面高 = min(实测高,1268)-52，
+   顶部对齐，保证内容和 tabbar 全部落在可用区内。 */
+#page{position:absolute;top:0;left:0;width:1072px;height:1216px;
 transform-origin:0 0;-webkit-transform-origin:0 0}
 
-.screen{width:1072px;height:1352px;display:none;position:relative}
+.screen{width:1072px;height:1120px;display:none;position:relative}
 .screen.on{display:block}
 #scr-panel,#scr-news{overflow-y:auto}
 
-/* ---------- 屏幕1：全屏时钟 ---------- */
-.wx{position:absolute;top:100px;right:48px;text-align:right;font-size:32px;line-height:1.65}
+/* ---------- 屏幕1：全屏时钟（时钟+日期组整体垂直居中） ---------- */
+.wx{position:absolute;top:84px;right:44px;text-align:right;font-size:32px;line-height:1.65}
 .wx-city{font-size:30px}
-.clock-big{position:absolute;top:400px;left:0;width:1072px;text-align:center;font-size:360px;line-height:1}
-.date-big{position:absolute;top:820px;left:0;width:1072px;text-align:center;font-size:44px;letter-spacing:8px}
+.clock-big{position:absolute;top:50%;left:0;width:1072px;margin-top:-230px;text-align:center;font-size:360px;line-height:1}
+.date-big{position:absolute;top:50%;left:0;width:1072px;margin-top:185px;text-align:center;font-size:44px;letter-spacing:8px}
 
-/* ---------- 屏幕2：面板（上：左日历右时钟；下：待办） ---------- */
-.panel-top{height:560px}
-.cal{float:left;width:620px;height:560px;padding:36px 40px}
-.clock-mid{float:right;width:452px;height:560px;text-align:center}
-.clock-mid .cm{font-size:150px;line-height:1;margin-top:150px}
-.clock-mid .dm{font-size:34px;letter-spacing:4px;margin-top:22px}
-.todo{clear:both;height:792px;border-top:3px solid #000000;padding:26px 40px}
-.box-title{font-size:28px;letter-spacing:12px;margin-bottom:22px}
-.cal-item{font-size:32px;line-height:1.8}
+/* ---------- 屏幕2：面板（上 42%：左日历右时钟；下 58%：待办） ---------- */
+.panel-top{height:42%}
+.cal{float:left;width:620px;height:100%;padding:32px 40px}
+.clock-mid{float:right;width:452px;height:100%;text-align:center}
+.clock-mid .cm{font-size:150px;line-height:1;margin-top:30%}
+.clock-mid .dm{font-size:34px;letter-spacing:4px;margin-top:20px}
+.todo{clear:both;height:58%;border-top:3px solid #000000;padding:22px 40px}
+.box-title{font-size:28px;letter-spacing:12px;margin-bottom:20px}
+.cal-item{font-size:32px;line-height:1.75}
 .cal-item .t{display:inline-block;width:270px}
-.todo-item{font-size:32px;line-height:1.85}
+.todo-item{font-size:32px;line-height:1.8}
 .todo-item .box{font-weight:bold;padding-right:10px}
 .todo-item .due{color:#555555;font-size:28px}
 .t-empty{font-size:30px;color:#666666;line-height:1.8}
 
 /* ---------- 屏幕3：新闻 ---------- */
-.news-head{font-size:30px;letter-spacing:4px;padding:32px 40px 18px;border-bottom:3px solid #000000}
+.news-head{font-size:30px;letter-spacing:4px;padding:30px 40px 16px;border-bottom:3px solid #000000}
 .news-head .nm{float:right;font-size:24px;color:#555555;letter-spacing:0}
-.news-item{padding:22px 40px;border-bottom:1px solid #bbbbbb}
+.news-item{padding:20px 40px;border-bottom:1px solid #bbbbbb}
 .ni-title{font-size:34px;line-height:1.45}
 .ni-meta{font-size:22px;color:#555555;margin-top:10px}
-.ni-sum{font-size:26px;line-height:1.65;color:#111111;margin-top:10px}
+.ni-sum{font-size:26px;line-height:1.6;color:#111111;margin-top:10px}
 
 /* ---------- 底部切换 ---------- */
 #tabbar{position:absolute;left:0;bottom:0;width:1072px;height:96px;border-top:3px solid #000000;background:#ffffff}
 .tab{float:left;width:33.33%;height:96px;line-height:96px;text-align:center;font-size:38px;letter-spacing:8px;text-indent:8px}
 .tab.on{background:#000000;color:#ffffff}
+
+/* ---------- 临时校准行（数值确认后删除） ---------- */
+.debug{position:absolute;left:0;bottom:12px;width:1072px;text-align:center;font-size:20px;color:#999999}
 </style>
 </head>
 <body>
@@ -62,6 +67,7 @@ transform-origin:0 0;-webkit-transform-origin:0 0}
   <div class="wx" id="wx"></div>
   <div class="clock-big" id="clock-big">--:--</div>
   <div class="date-big" id="date-big"></div>
+  <div class="debug" id="debug"></div>
 </div>
 
 <div id="scr-panel" class="screen on">
@@ -202,24 +208,43 @@ function renderLocal(d){
 load('data/live.json',function(txt){renderLive(parse(txt));});
 load('data/local.json',function(txt){renderLocal(parse(txt));});
 
-/* ---------- 自适应缩放 ----------
-   竖屏视口下 1:1 铺满（Kindle 原生视口 1072x1448，减去浏览器地址栏高度时整体略缩）；
-   手机/电脑等异形视口按比例缩放居中，保证完整可见。 */
-var PW=1072,PH=1448;
+/* ---------- 自适应布局 ----------
+   宽度固定 1072；页面高度 = min(实测视口高, 1268) - 52（扣掉底部常驻滚动条区），
+   顶部对齐；异形视口（手机/电脑）按宽等比缩放。改动生效才写样式，避免墨水屏闪。 */
+var PW=1072,PH_CAP=1268,CHROME=52,TAB=96,PH_MIN=860;
+function measure(){
+  var w=1e9,h=1e9,v;
+  v=window.innerWidth;if(v>0&&v<w){w=v;}
+  v=document.documentElement.clientWidth;if(v>0&&v<w){w=v;}
+  v=document.body?document.body.clientWidth:0;if(v>0&&v<w){w=v;}
+  v=window.innerHeight;if(v>0&&v<h){h=v;}
+  v=document.documentElement.clientHeight;if(v>0&&v<h){h=v;}
+  v=document.body?document.body.clientHeight:0;if(v>0&&v<h){h=v;}
+  if(w>1e8){w=PW;}
+  if(h>1e8){h=PH_CAP;}
+  return {w:w,h:h};
+}
 function fit(){
-  var w=window.innerWidth||document.documentElement.clientWidth||0;
-  var h=window.innerHeight||document.documentElement.clientHeight||0;
-  if(!w||!h){return;}
-  var s=Math.min(w/PW,h/PH);
-  var x=(w-PW*s)/2,y=(h-PH*s)/2;
-  var t='translate('+x+'px,'+y+'px) scale('+s+')';
+  var m=measure();
+  var pageH=Math.max(PH_MIN,Math.min(m.h,PH_CAP)-CHROME);
+  var s=Math.min(m.w/PW,m.h/pageH,1);
+  var x=(m.w-PW*s)/2;
+  var t='translate('+x+'px,0px) scale('+s+')';
   var p=document.getElementById('page');
-  p.style.webkitTransform=t;
-  p.style.transform=t;
+  if(p._ph!==pageH){
+    p._ph=pageH;
+    p.style.height=pageH+'px';
+    var scs=document.getElementsByClassName('screen');
+    for(var i=0;i<scs.length;i++){scs[i].style.height=(pageH-TAB)+'px';}
+  }
+  if(p._t!==t){p._t=t;p.style.webkitTransform=t;p.style.transform=t;}
+  var d='视口 '+m.w+'×'+m.h+' · 页面 '+PW+'×'+pageH+' · 缩放 '+s.toFixed(3);
+  if(p._d!==d){p._d=d;$('debug').innerHTML=d;}
 }
 fit();
 setTimeout(fit,300);
 setTimeout(fit,1000);
+setInterval(fit,5000);
 window.onresize=fit;
 if('onorientationchange' in window){window.onorientationchange=fit;}
 })();
