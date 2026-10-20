@@ -18,7 +18,7 @@ WorkBuddy 自动化（每天早 8 点）─> data/local.json ┘
 
 ```bash
 # 1. 克隆（用 HTTPS；SSH 在部分网络环境不通）
-git clone https://github.com/ztow/kindle-screen.git ~/kindle-screen
+git clone https://github.com/ztow/ks.git ~/kindle-screen
 cd ~/kindle-screen
 
 # 2. 让裸 git push 复用 gh 的登录态（WorkBuddy 自动化推送时要用）
@@ -37,7 +37,7 @@ git config credential.helper '!gh auth git-credential'
 ## Kindle 侧
 
 1. 连 2.4GHz WiFi（Voyage 不支持 5G）
-2. β 浏览器打开 `https://ztow.github.io/kindle-screen/`，加书签
+2. β 浏览器打开 `https://ztow.github.io/ks/`，加书签
 3. 建议 USB 常插电；屏幕休眠唤醒后会自动回到页面
 
 ## 改配置
