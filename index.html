@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1448,initial-scale=1.0">
+<title>信息屏</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1448px;height:1072px;background:#ffffff;color:#000000;overflow:hidden;
+font-family:"Helvetica Neue",Helvetica,Arial,"Heiti SC","STHeiti","Microsoft YaHei",sans-serif;
+-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;user-select:none}
+
+.screen{width:1448px;height:996px;display:none;position:relative}
+.screen.on{display:block}
+#scr-panel,#scr-news{overflow-y:auto}
+
+/* ---------- 屏幕1：全屏时钟 ---------- */
+.wx{position:absolute;top:96px;right:60px;text-align:right;font-size:32px;line-height:1.65}
+.wx-city{font-size:30px}
+.clock-big{position:absolute;top:290px;left:0;width:1448px;text-align:center;font-size:400px;line-height:1}
+.date-big{position:absolute;top:790px;left:0;width:1448px;text-align:center;font-size:46px;letter-spacing:10px}
+
+/* ---------- 屏幕2：面板 ---------- */
+.panel-top{height:530px}
+.cal{float:left;width:860px;height:530px;padding:42px 44px}
+.clock-mid{float:right;width:588px;height:530px;text-align:center}
+.clock-mid .cm{font-size:170px;line-height:1;margin-top:148px}
+.clock-mid .dm{font-size:38px;letter-spacing:6px;margin-top:28px}
+.todo{clear:both;height:466px;border-top:3px solid #000000;padding:30px 44px}
+.box-title{font-size:28px;letter-spacing:12px;margin-bottom:26px}
+.cal-item{font-size:32px;line-height:1.8}
+.cal-item .t{display:inline-block;width:270px}
+.todo-item{font-size:32px;line-height:1.85}
+.todo-item .box{font-weight:bold;padding-right:10px}
+.todo-item .due{color:#555;font-size:28px}
+.t-empty{font-size:30px;color:#666666;line-height:1.8}
+
+/* ---------- 屏幕3：新闻 ---------- */
+.news-head{font-size:30px;letter-spacing:4px;padding:34px 44px 20px;border-bottom:3px solid #000000}
+.news-head .nm{float:right;font-size:24px;color:#555555;letter-spacing:0}
+.news-item{padding:24px 44px;border-bottom:1px solid #bbbbbb}
+.ni-title{font-size:34px;line-height:1.45}
+.ni-meta{font-size:22px;color:#555555;margin-top:10px}
+.ni-sum{font-size:26px;line-height:1.65;color:#111111;margin-top:10px}
+
+/* ---------- 底部切换 ---------- */
+#tabbar{position:fixed;left:0;bottom:0;width:1448px;height:76px;border-top:3px solid #000000;background:#ffffff}
+.tab{float:left;width:33.33%;height:76px;line-height:76px;text-align:center;font-size:32px;letter-spacing:8px;text-indent:8px}
+.tab.on{background:#000000;color:#ffffff}
+</style>
+</head>
+<body>
+
+<div id="scr-clock" class="screen on">
+  <div class="wx" id="wx"></div>
+  <div class="clock-big" id="clock-big">--:--</div>
+  <div class="date-big" id="date-big"></div>
+</div>
+
+<div id="scr-panel" class="screen">
+  <div class="panel-top">
+    <div class="cal">
+      <div class="box-title">日程</div>
+      <div id="cal-list"></div>
+    </div>
+    <div class="clock-mid">
+      <div class="cm" id="clock-mid">--:--</div>
+      <div class="dm" id="date-mid"></div>
+    </div>
+  </div>
+  <div class="todo">
+    <div class="box-title">待办</div>
+    <div id="todo-list"></div>
+  </div>
+</div>
+
+<div id="scr-news" class="screen">
+  <div class="news-head">AIHOT · 精选<span class="nm" id="news-meta"></span></div>
+  <div id="news-list"></div>
+</div>
+
+<div id="tabbar">
+  <div class="tab on" id="tab-clock">时钟</div>
+  <div class="tab" id="tab-panel">面板</div>
+  <div class="tab" id="tab-news">新闻</div>
+</div>
+
+<script>
+(function(){
+function $(i){return document.getElementById(i);}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+var WK=['一','二','三','四','五','六','日'];
+function pad(n){return (n<10?'0':'')+n;}
+function hm(d){return pad(d.getHours())+':'+pad(d.getMinutes());}
+function cdate(d){return (d.getMonth()+1)+'月'+d.getDate()+'日 星期'+WK[d.getDay()==0?6:d.getDay()-1];}
+
+/* 时钟：只到分，分钟不变不动 DOM */
+var last='';
+function tick(){var s=hm(new Date());if(s!==last){last=s;$('clock-big').innerHTML=s;$('clock-mid').innerHTML=s;}}
+tick();setInterval(tick,1000);
+var now=new Date();
+$('date-big').innerHTML=cdate(now);
+$('date-mid').innerHTML=cdate(now);
+
+/* 整点重载：0/3/6/9/12/15/18/21 点 */
+function nextRefresh(){
+  var d=new Date();
+  var nh=(Math.floor(d.getHours()/3)+1)*3;
+  var t=new Date(d.getFullYear(),d.getMonth(),d.getDate(),nh,0,0,0);
+  var ms=t.getTime()-d.getTime();
+  if(ms<1000){ms=1000;}
+  if(ms>86400000){ms=86400000;}
+  return {ms:ms,label:pad(t.getHours())+':'+pad(t.getMinutes())};
+}
+var nr=nextRefresh();
+setTimeout(function(){location.reload(true);},nr.ms);
+
+/* 屏幕切换，记住上次看的 */
+var TABS=['clock','panel','news'];
+function show(name){
+  for(var i=0;i<TABS.length;i++){
+    var t=TABS[i];
+    $('scr-'+t).className=(t===name)?'screen on':'screen';
+    $('tab-'+t).className=(t===name)?'tab on':'tab';
+  }
+  try{localStorage.setItem('ks-tab',name);}catch(e){}
+}
+var saved=null,ok=false;
+try{saved=localStorage.getItem('ks-tab');}catch(e2){}
+if(saved){for(var i=0;i<TABS.length;i++){if(TABS[i]===saved){ok=true;}}}
+show(ok?saved:'clock');
+$('tab-clock').onclick=function(){show('clock');};
+$('tab-panel').onclick=function(){show('panel');};
+$('tab-news').onclick=function(){show('news');};
+
+/* 数据读取：兼容明文 JSON 和 base64 两种格式 */
+function load(url,cb){
+  var x=new XMLHttpRequest();
+  x.open('GET',url+'?_='+Date.now(),true);
+  x.onreadystatechange=function(){
+    if(x.readyState!==4){return;}
+    if(x.status===200){cb(x.responseText);}else{cb(null);}
+  };
+  x.send(null);
+}
+function parse(text){
+  if(!text){return null;}
+  try{return JSON.parse(text);}catch(e){}
+  try{
+    var raw=String(text).replace(/\s/g,'');
+    var bytes=atob(raw);
+    var arr=[],i;
+    for(i=0;i<bytes.length;i++){arr.push(bytes.charCodeAt(i));}
+    return JSON.parse(decodeURIComponent(escape(String.fromCharCode.apply(null,arr))));
+  }catch(e2){return null;}
+}
+
+function renderLive(d){
+  if(!d){
+    $('wx').innerHTML='<div class="wx-city">天气数据未就绪</div>';
+    $('news-list').innerHTML='<div class="t-empty" style="padding:40px 44px">live.json 未就绪，等下一次整点抓取</div>';
+    return;
+  }
+  var w=d.weather||{};
+  if(w.city){
+    $('wx').innerHTML='<div class="wx-city">'+esc(w.city)+' '+esc(w.desc)+'</div>'+
+      '<div>'+esc(w.temp)+'°（今日 '+esc(w.lo)+'°~'+esc(w.hi)+'°）</div>';
+  }
+  var news=d.news||[],h='',i;
+  for(i=0;i<news.length;i++){
+    var n=news[i];
+    h+='<div class="news-item"><div class="ni-title">'+esc(n.title)+'</div>'+
+       '<div class="ni-meta">'+esc(n.category||'')+(n.source?(' · '+esc(n.source)):'')+(n.pub?(' · '+esc(n.pub)):'')+'</div>'+
+       (n.summary?('<div class="ni-sum">'+esc(n.summary)+'</div>'):'')+'</div>';
+  }
+  $('news-list').innerHTML=h||'<div class="t-empty" style="padding:40px 44px">暂无条目</div>';
+  $('news-meta').innerHTML='更新于 '+(d.generated_at||'--')+' · 下次 '+nr.label;
+}
+
+function renderLocal(d){
+  var ev=(d&&d.events)||[],td=(d&&d.todos)||[],h='',t='',i;
+  for(i=0;i<ev.length;i++){
+    h+='<div class="cal-item"><span class="t">'+esc(ev[i].label||'')+'</span>'+esc(ev[i].title||'')+'</div>';
+  }
+  $('cal-list').innerHTML=h||'<div class="t-empty">接下来没有日程</div>';
+  for(i=0;i<td.length;i++){
+    t+='<div class="todo-item"><span class="box">□ </span>'+esc(td[i].title||'')+
+       (td[i].due?(' <span class="due">'+esc(td[i].due)+'</span>'):'')+'</div>';
+  }
+  $('todo-list').innerHTML=t||'<div class="t-empty">待办是空的</div>';
+}
+
+load('data/live.json',function(txt){renderLive(parse(txt));});
+load('data/local.json',function(txt){renderLocal(parse(txt));});
+})();
+</script>
+</body>
+</html>

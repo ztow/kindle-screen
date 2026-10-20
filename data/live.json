@@ -1,0 +1,415 @@
+{
+ "generated_at": "2026-10-20 22:50",
+ "weather": {
+  "city": "哈尔滨",
+  "temp": 2,
+  "desc": "晴",
+  "feels": -3,
+  "humidity": 59,
+  "wind": 11,
+  "hi": 8,
+  "lo": 1
+ },
+ "news": [
+  {
+   "title": "Meta Muse 分享链接设计缺陷致用户隐私对话可被枚举发现",
+   "link": "https://aihot.news/items/qkvd1dip3f1qzawvq1yo7yalk",
+   "summary": "安全公司 Claroc 的研究人员发现，Meta 的 AI 智能体 Muse 的对话分享链接存在隐私风险，仅用一次查询就枚举出 6800 个分享链接，打开其中数百个后发现贷款申请、收入报表、员工假期日历等敏感内容。",
+   "category": "行业动态",
+   "source": "Ars Technica：AI",
+   "pub": "10-20 20:33"
+  },
+  {
+   "title": "美国陆军网络司令部 ECHOTRIBBLE 项目拟将 AI 智能体变成自主扩散的网络武器",
+   "link": "https://aihot.news/items/u6kqfrgiqrhbpxn012nlisd66",
+   "summary": "据 The Intercept 获取的文件，美国陆军网络司令部（ARCYBER）正在开发代号 ECHOTRIBBLE 的平台，让 AI 智能体自主在网络间移动、识别并清除威胁目标，之后自毁，且须在极少人工监督下运行。",
+   "category": "行业动态",
+   "source": "The Decoder：AI News",
+   "pub": "10-20 20:32"
+  },
+  {
+   "title": "llm-d 1.0 发布：Kubernetes 原生分布式推理服务走向生产就绪",
+   "link": "https://aihot.news/items/b1pcaa7ceghor24vjgsjagqqd",
+   "summary": "IBM、Red Hat 和 Google 等主导的开源推理项目 llm-d 在 PyTorch Conference North America 上发布 llm-d 1.0，这是一个 Kubernetes 原生的分布式推理服务框架，支持任意模型、任意加速器和任意云。",
+   "category": "AI 产品",
+   "source": "IBM Research：AI",
+   "pub": "10-20 20:00"
+  },
+  {
+   "title": "DeepSeek 全面开源内部推理框架 DeepInfer",
+   "link": "https://aihot.news/items/ckykonvith99q6hvd0utjdwfn",
+   "summary": "DeepSeek 宣布将内部推理框架 DeepInfer 全面开源，并同步开源生产级 Token 编解码组件 deepseek-recipe。",
+   "category": "AI 产品",
+   "source": "公众号：DeepSeek",
+   "pub": "10-20 16:54"
+  },
+  {
+   "title": "路透：OpenAI 拟在 Anthropic 上市前加速融资约 300 亿美元，估值超 1.4 万亿美元",
+   "link": "https://aihot.news/items/srgsfi8edabzrwgg6vjtgw3ya",
+   "summary": "据 Reuters 报道，OpenAI 正赶在 Anthropic 上市前洽谈融资约 300 亿美元，估值超 1.4 万亿美元，比 3 月的 8520 亿美元至少高 64%。",
+   "category": "行业动态",
+   "source": "Rohan Paul",
+   "pub": "10-20 16:06"
+  },
+  {
+   "title": "Waymo 宣布进军西班牙，2027 年在马德里大区迎接首批乘客",
+   "link": "https://aihot.news/items/mnqboa5pusqz9brarpfutz57b",
+   "summary": "Waymo 宣布为在西班牙马德里大区推出全自动驾驶出行服务奠定基础，目标 2027 年迎来首批乘客。未来数日其电动 Jaguar I-PACE 车辆将现身当地街头，先以人工驾驶开始，再由当地受训的自动驾驶专家进行技术验证。Waymo 称已累计完成逾 2000 万次行程、400 万公里全自动驾驶里程，在其运营城市中涉及重伤或更严重事故的比例比人类司机低 95%。",
+   "category": "行业动态",
+   "source": "Waymo：Blog",
+   "pub": "10-20 15:00"
+  },
+  {
+   "title": "面壁智能解析前瞻专家调度 LES 如何让 35B MoE 在手机端侧实时无损运行",
+   "link": "https://aihot.news/items/m2ylwtzb8x49c32spfl1wplqz",
+   "summary": "面壁智能 MiniCPM-V 团队介绍支撑 MiniCPM-V 4.7 端侧运行的前瞻专家调度（LES）技术，称首次实现 35B-A3B 规模 MoE 在端侧实时无损运行，iPhone 18 Pro Max 实测解码超 20 token/s。",
+   "category": "教程",
+   "source": "公众号：面壁智能",
+   "pub": "10-20 14:22"
+  },
+  {
+   "title": "Apate.ai 用35万个AI反诈拖住骗子，国内年轻人用AI视频反制AI卖惨账号",
+   "link": "https://aihot.news/items/awmaqqunma83599eii4g3akgw",
+   "summary": "作者讲述了两起用AI反制诈骗的案例。澳大利亚公司 Apate.ai 用35万个AI伪装成容易上当的受害者，已与骗子聊天250万次，累计耗掉骗子约17年时间，澳大利亚运营商 TPG 将近59万通可疑来电转给这些AI，澳洲联邦银行公开报告的诈骗损失降低76%，公司今年8月拿到815万美元种子轮融资。",
+   "category": "行业动态",
+   "source": "公众号：数字生命卡兹克",
+   "pub": "10-20 08:26"
+  },
+  {
+   "title": "FBI 称前 OpenAI 工程师涉嫌窃密，手机中发现 Saudi Gov Docs 文件夹",
+   "link": "https://aihot.news/items/b80bl8763pqoqq8hdio0ew6t1",
+   "summary": "美国法院批准羁押被指控在 OpenAI 会议室安装窃听器的前工程师 Abdulrahman Alfozan。检方称其 iPhone 上有名为 Saudi Gov Docs 的文件夹，与沙特王室成员有 WhatsApp 联系，并曾用 OpenAI 生产力 Agent 搜索适合安放窃听器的会议室；他被捕前已预订沙特政府付费的单程机票，妻子和儿子已离美。",
+   "category": "行业动态",
+   "source": "Ars Technica：AI",
+   "pub": "10-20 04:21"
+  },
+  {
+   "title": "fal 联合 bfl_ai 发布后训练视频模型 FLUX 3 Max",
+   "link": "https://aihot.news/items/qldoluc73m0j8mo7u0ttf95km",
+   "summary": "fal 发布与 @bfl_ai 合作的最新后训练视频模型 FLUX 3 Max，在第三方 image-to-video 质量评测中并列第一，生成 10 秒 720/768p 视频约需 12 秒。未来三周该模型 75% 折扣，标注为同质量级别最便宜的前沿视频模型。",
+   "category": "AI 模型",
+   "source": "fal",
+   "pub": "10-20 02:34"
+  },
+  {
+   "title": "DeepSeek-V4.1-Flash-20261017 (Max) 登顶 Agent Arena 开源模型第一",
+   "link": "https://aihot.news/items/h6okcjroca6s95iemyh7dhpcm",
+   "summary": "Arena 宣布 DeepSeek-V4.1-Flash-20261017 (Max) 成为 Agent Arena 第一开源模型，总排名第 11，基于超 7.5K 真实会话净提升 +5.1%。其中位任务成本 $0.20，约为 GPT-6.1 Sol 提升幅度的 37%、成本的 27%；Confirmed Success 提升 +11.5%，且无 Tool Hallucination 问题。",
+   "category": "AI 模型",
+   "source": "Arena",
+   "pub": "10-20 02:18"
+  },
+  {
+   "title": "Inception 扩散模型 Mercury 3 上线 OpenRouter",
+   "link": "https://aihot.news/items/hnasqdie0vmly79xyg2ehqcgb",
+   "summary": "Inception 的扩散模型 Mercury 3 上线 OpenRouter，生成速度超 1,000 tok/s，支持 1M 上下文，是 Mercury 2.5 的 4 倍。Inception 报告其在 IFBench、GPQA Diamond 和 SWE-Bench Atlas 上超过 GPT-6 Luna 和 Haiku 5.5；上线期五折，价格 $0.10/M 输入、$0.35/M 输出。",
+   "category": "AI 产品",
+   "source": "OpenRouter",
+   "pub": "10-20 00:54"
+  },
+  {
+   "title": "DeepSeek V4.1 Flash 1017 发布，Artificial Analysis 智能指数得分 45 并列开源模型第二",
+   "link": "https://aihot.news/items/wrlpmwb2tsk1moehp5kpsvovb",
+   "summary": "DeepSeek 发布 DeepSeek V4.1 Flash 1017，在 Artificial Analysis Intelligence Index 得分 45，比 DeepSeek V4.1 Flash 提高 6 分，与 GLM-5.3 并列开源权重模型第二，仅次于 MiMo-V2.6-Pro。",
+   "category": "AI 模型",
+   "source": "Artificial Analysis",
+   "pub": "10-20 00:25"
+  },
+  {
+   "title": "Meta Muse Wonder Full (Max) 登上 Code Arena: WebDev 第 6 名，1726 分",
+   "link": "https://aihot.news/items/qxv5364a77v0d22sab7mq4dha",
+   "summary": "Arena 宣布 Meta 的 Muse Wonder Full (Max) 首次进入 Code Arena: WebDev 榜单，以 1726 分排名第 6，使 Meta 成为第 3 实验室，此前该位置由 Google 持有。",
+   "category": "AI 模型",
+   "source": "Arena",
+   "pub": "10-20 00:14"
+  },
+  {
+   "title": "Anthropic 用 Claude 设计出针对蝎子神经毒素的蛋白质迷你结合剂",
+   "link": "https://aihot.news/items/oxl50pfymja6rgxkem3y0de9j",
+   "summary": "Anthropic 让内部研究模型在 Claude Science 中主要自主运行 64 小时，设计针对五种蝎子神经毒素的蛋白质迷你结合剂，共生成 318,484 个设计、筛选出 180 个。",
+   "category": "论文",
+   "source": "Anthropic：Research",
+   "pub": "10-20 00:00"
+  },
+  {
+   "title": "Redact 调查：WhatsApp 帮助页面隐藏 LLM 指令，让 AI 不推荐监管机构、不提 GDPR",
+   "link": "https://aihot.news/items/apaky0ybxpb9uwt12jrwj954p",
+   "summary": "Redact 发现 WhatsApp 帮助中心页面向 LLM 发送用户看不到的隐藏指令，指示其支持聊天机器人不推荐数据保护监管机构，并在用户提到律师或法律行动后不引用 GDPR、LGPD 或 CCPA。",
+   "category": "行业动态",
+   "source": "Hacker News：AI 热帖",
+   "pub": "10-20 00:00"
+  },
+  {
+   "title": "Meta 详解 Thin Orchestrator 模式：让路由少干活提升 AI 智能体可靠性",
+   "link": "https://aihot.news/items/qh6pvehounuylklti7i0zl124",
+   "summary": "Meta 工程团队介绍其数据管道智能体采用的瘦编排器（thin orchestrator）模式：一个约 1300 行的编排器只负责路由和可靠性检查，将 20+ 工作流分派给 14 个上下文隔离的专项子智能体，自身不做任何领域推理。",
+   "category": "教程",
+   "source": "Meta Engineering Blog",
+   "pub": "10-19 23:30"
+  },
+  {
+   "title": "美国国土安全部下令所有联邦文职机构移除 DeepSeek 及基于其开发的产品",
+   "link": "https://aihot.news/items/p04w1xjk7v6fmlskpf5vsnuka",
+   "summary": "美国国土安全部依据 2018 年供应链法发布 2026-01 号命令，要求所有联邦文职机构立即停止采购 DeepSeek 及其关联公司产品，并从 IT 系统中移除相关产品，包括使用 DeepSeek 实现开发的第三方产品与服务。",
+   "category": "行业动态",
+   "source": "Hacker News：AI 热帖",
+   "pub": "10-19 23:05"
+  },
+  {
+   "title": "Numan 如何用 LangGraph 和 LangSmith 构建评测优先的 AI 健康教练 Nu",
+   "link": "https://aihot.news/items/nk19eo4eud45d47tmwxm684iu",
+   "summary": "英国数字健康公司 Numan 复盘其 AI 健康教练 Nu 的评测体系建设，核心结论是稀缺资产不是提示词而是评测标准。单轮静态数据集和脚本化多轮对话都难以覆盖真实会话，Nu 改为按类别打分的主题数据集、以更廉价模型扮演患者的模拟对话层，并让安全回归自动阻断发布。",
+   "category": "教程",
+   "source": "LangChain：Blog",
+   "pub": "10-19 23:00"
+  },
+  {
+   "title": "Disney 拟通过破产程序收购 Character.AI 团队与技术、绕开其诉讼",
+   "link": "https://aihot.news/items/x7nruknd2vvd2dlhipy8tzy5m",
+   "summary": "若破产方案获法院批准，Disney 将获得 Character.AI 的员工和大部分技术栈，同时避开导致其破产的诉讼和 46 个州与地区的联合调查。破产文件显示 40 个州指控 Character.AI 聊天机器人曾鼓励未成年人隐瞒自残伤痕甚至杀害父母，公司发言人称该描述不准确；相关州已保留挑战破产方案的权利。",
+   "category": "行业动态",
+   "source": "Ars Technica：AI",
+   "pub": "10-19 22:45"
+  },
+  {
+   "title": "黑客用 AI 智能体入侵 John Deere、SharkNinja 等超 100 家网站",
+   "link": "https://aihot.news/items/tdcasw4dwhyzne3hxo3dmizmz",
+   "summary": "AI 安全公司 Norforge 发现一名黑客用开源 AI 平台 Cairn 编排的智能体入侵了超过 100 个网站，据 Reuters 报道受害者包括 John Deere、SharkNinja 和 Cummins。",
+   "category": "行业动态",
+   "source": "The Verge：AI",
+   "pub": "10-19 21:58"
+  },
+  {
+   "title": "n8n 教程：在 NVIDIA DGX Spark 上离线运行全套 AI 工作流",
+   "link": "https://aihot.news/items/ezjbo6ic6xfvpyxyghjekaude",
+   "summary": "n8n 博客发布教程，讲解如何在一台 NVIDIA DGX Spark（128GB 统一内存）上部署七个本地模型，通过 LiteLLM 单一 OpenAI 兼容端点驱动 n8n 工作流，全程不调用云 API。",
+   "category": "教程",
+   "source": "n8n Blog",
+   "pub": "10-19 21:22"
+  },
+  {
+   "title": "Meta 详解 Prometheus 吉瓦级超集群：一期已完成并用于训练 Muse 模型",
+   "link": "https://aihot.news/items/ebl13m9gich6kfjixzvfiw5bq",
+   "summary": "Meta 介绍其位于俄亥俄州 New Albany 的吉瓦级超集群 Prometheus，一期已建成并用于训练 Muse 系列基础模型，目标扩展到约 100 万张 GPU。",
+   "category": "教程",
+   "source": "Meta Engineering Blog",
+   "pub": "10-19 21:00"
+  },
+  {
+   "title": "AWS 发布 TorchNeuron：Trainium 的原生 PyTorch 后端开源",
+   "link": "https://aihot.news/items/szf3v3re4888fzekwoohhu8b4",
+   "summary": "AWS 宣布推出 TorchNeuron，一个面向 Trainium 的开源原生 PyTorch 后端，10 月 20 日以 Apache 2.0 协议在 PyTorch Conference North America 开启公测。",
+   "category": "AI 产品",
+   "source": "PyTorch：Blog",
+   "pub": "10-19 20:45"
+  },
+  {
+   "title": "OpenAI 发布 GPT-6 系列模型，提升 COBOL 等低资源编程语言编码能力",
+   "link": "https://aihot.news/items/tzuiybo7a45sm87wj4rec2mvo",
+   "summary": "OpenAI 宣布最新模型在 COBOL、Fortran、Visual Basic 等低资源编程语言上能力显著提升，并推出两项自建评测。",
+   "category": "AI 模型",
+   "source": "OpenAI：官网动态",
+   "pub": "10-19 20:00"
+  },
+  {
+   "title": "蚂蚁 inclusionAI 开源 Ming-3.0-tts 语音合成模型",
+   "link": "https://aihot.news/items/uvgayscfmc9ujjak94ymsnxnd",
+   "summary": "蚂蚁 inclusionAI 在 GitHub 发布 Ming-3.0-tts，包含 0.5b dense 和基于 Ling V3 的 tiny（7.9B 总参数、1.3B 激活）两个语音生成模型，MIT 协议开源，权重可在 Hugging Face 和 ModelScope 下载。",
+   "category": "AI 模型",
+   "source": "蚂蚁 inclusionAI：GitHub 新仓库",
+   "pub": "10-19 15:03"
+  },
+  {
+   "title": "Inception Labs 发布扩散大语言模型 Mercury 3，速度达 1068 tokens/秒",
+   "link": "https://aihot.news/items/osk3jj5jltogwr6zpo09w80j8",
+   "summary": "Inception Labs 发布扩散式大语言模型 Mercury 3，称其在多项基准上超过 GPT-6 Luna 和 Claude Haiku 5.5，速度达 1068 tokens/秒，参数量较 Mercury 1 扩大 40 倍以上。",
+   "category": "AI 模型",
+   "source": "Inception Labs：Blog",
+   "pub": "10-19 15:00"
+  },
+  {
+   "title": "DeepSeek-V4.1-Flash-20261017 登顶 Code Arena: WebDev 开源模型榜首",
+   "link": "https://aihot.news/items/bm95oliei5mcgy2tau7e22d59",
+   "summary": "Arena 宣布 DeepSeek-V4.1-Flash-20261017 (Max) 成为 Code Arena: WebDev 榜单第一开源模型，超过 Kimi K3 (Max)，成本低约 10 倍。",
+   "category": "AI 模型",
+   "source": "Arena",
+   "pub": "10-19 02:56"
+  },
+  {
+   "title": "MiniMax 发布 M3.1 Flash，推理提速近三倍、用量成本降低 70%",
+   "link": "https://aihot.news/items/wrnv8dd428iozlj5xax99zbmj",
+   "summary": "MiniMax 发布 MiniMax M3.1 Flash，匿名模型 Space Bunny 是其早期版本，曾处理超过 200 万亿 token。",
+   "category": "AI 模型",
+   "source": "MiniMax：Blog",
+   "pub": "10-19 00:00"
+  },
+  {
+   "title": "Google ADK 教程：用流式工具与响应调度构建永不冷场的语音智能体",
+   "link": "https://aihot.news/items/emuxoxo4dpkovprjlldl4ugqt",
+   "summary": "Google Developers Blog 发布教程，讲解如何用开源 ADK 与 gemini-3.8-live 构建不出现冷场的语音智能体，核心是非阻塞工具调用。",
+   "category": "教程",
+   "source": "Google Developers Blog",
+   "pub": "10-19 00:00"
+  },
+  {
+   "title": "斯坦福 HAI 发布 MedHELM、PhysicianBench 与 HealthAdminBench，测出医疗 AI Agent 实际完成率不足一半",
+   "link": "https://aihot.news/items/dla37so34wcgznigffx3j6qko",
+   "summary": "斯坦福团队总结三年构建医疗 AI 基准的成果，PhysicianBench 上最佳模型 GPT-5.5 单次仅完成 46% 任务，HealthAdminBench 上 Claude Opus 4.6 完成 36.3%。MedHELM 覆盖 5 大类 121 项临床任务，评测显示临床决策支持和管理流程得分最低；失败主要来自跨文档与系统传递信息时丢失上下文，两项基准均以合成数据、公开代码和排行榜开放。",
+   "category": "论文",
+   "source": "Stanford HAI News",
+   "pub": "10-19 00:00"
+  },
+  {
+   "title": "德国两家法院先后裁定 Google 须为其 AI Overview 内容负责",
+   "link": "https://aihot.news/items/bbr25r9mbi8zbbtmu2uiati7f",
+   "summary": "慕尼黑地区法院 I 五月底裁定 Google 的 AI 搜索摘要属于公司自己的陈述而非中立转述，Google 须为错误内容担责；Google 公开宣布上诉后实际以和解结案，未获上级法院裁决。",
+   "category": "行业动态",
+   "source": "The Decoder：AI News",
+   "pub": "10-18 18:52"
+  },
+  {
+   "title": "卡兹克实测华硕 ProArt 创16 RTX Spark 电脑，37999 元实现本地 Token 自由",
+   "link": "https://aihot.news/items/i8vi0763u7lz34lkoagoh0agt",
+   "summary": "作者分享受邀参加英伟达 RTX Spark 全球开售活动后，深度使用一周华硕 ProArt 创16（128G 统一内存+1T，京东售价 37999 元）的体验，开售时 128G 版本在京东几分钟内被抢空。",
+   "category": "教程",
+   "source": "卡兹克",
+   "pub": "10-18 10:04"
+  },
+  {
+   "title": "Browser Use 讲解浏览器智能体的工作原理与使用时机",
+   "link": "https://aihot.news/items/w3vpc68lufgj57zcy1hd38a60",
+   "summary": "Browser Use 发布科普文章，讲解浏览器智能体由模型、harness 和浏览器三部分组成，通过观察页面、选择动作、执行并检查结果的循环完成任务，可通过 DOM、无障碍树或截图读取页面。",
+   "category": "教程",
+   "source": "Browser Use",
+   "pub": "10-18 08:00"
+  },
+  {
+   "title": "SGLang 发布 Low-Latency Mode，通过插件框架在 NVIDIA 和 AMD GPU 上降低推理延迟",
+   "link": "https://aihot.news/items/a1dez7azk8nkmj0mgeb9pep03",
+   "summary": "SGLang 团队推出 Low-Latency Mode，通过插件框架引入专用内核，在 NVIDIA GB300 和 AMD MI355X GPU 上显著降低推理延迟。",
+   "category": "AI 产品",
+   "source": "LMSYS Blog",
+   "pub": "10-18 00:00"
+  },
+  {
+   "title": "WorkBuddy Intl 更新支持 DeepSeek-V4.1-Flash-1017，10 月 31 日前免费",
+   "link": "https://aihot.news/items/xgj246drlw70qbgypibz6atla",
+   "summary": "WorkBuddy Intl 已更新至最新的 DeepSeek-V4.1-Flash-1017 模型，10 月 31 日前免费开放。引用的 DeepSeek 官方内容称该模型相比上一版性能更强、任务完成更快、输出更短，已上线网站、App 和 API，并针对 DeepSeek Harness、Tencent CodeBuddy、WorkBuddy 等做了优化。",
+   "category": "AI 产品",
+   "source": "Tencent WorkBuddy",
+   "pub": "10-17 18:29"
+  },
+  {
+   "title": "卡兹克实测37999元RTX Spark轻薄本：一周实现本地Token自由",
+   "link": "https://aihot.news/items/ffpkck4k06le4smuaz4slhvcz",
+   "summary": "数字生命卡兹克分享华硕ProArt创16（RTX Spark N1X芯片、128G统一内存、37999元）的一周深度使用体验，该机全球开售时128G版本在京东几分钟内被抢空。",
+   "category": "教程",
+   "source": "公众号：数字生命卡兹克",
+   "pub": "10-17 18:19"
+  },
+  {
+   "title": "Anthropic 如何在 Claude 写下 Claude Code 约 90% 代码后重新设计代码评审",
+   "link": "https://aihot.news/items/p4mq9t7wyzlxritu15i6d8dtv",
+   "summary": "作者解读 Anthropic 关于 Claude Code 代码评审重构的博客：Claude 写了约 90% 的代码，2026 年 6 月到 9 月合并 PR 翻倍以上而 revert 率下降超 40%。",
+   "category": "教程",
+   "source": "邵猛",
+   "pub": "10-17 09:52"
+  },
+  {
+   "title": "Muse Spark Open (Max) 登顶 Code Arena: WebDev 美国开源模型第一",
+   "link": "https://aihot.news/items/bjzjg5k7af07c1c20bc1a8gxp",
+   "summary": "Arena 公布 Meta 发布的 Muse Spark Open (Max) 在 Code Arena: WebDev 以 1511 分位居美国开源模型第一、开源模型总榜第 13。",
+   "category": "AI 模型",
+   "source": "Arena",
+   "pub": "10-17 06:22"
+  },
+  {
+   "title": "DeepSeek 开放自研搜索 API",
+   "link": "https://aihot.news/items/x7hxr1lvyddc8hrbrugfx4uyg",
+   "summary": "DeepSeek 开放自研搜索 API，底层由 AI 原生的 DeepSeek 搜索引擎提供，每天稳定处理数亿次搜索请求。该引擎索引全球千亿级网页、支持多语言，并通过识别机制过滤 SEO 作弊、GEO 操纵和低质 AIGC，使用方式见网页搜索与抓取指南。",
+   "category": "AI 产品",
+   "source": "DeepSeek：API 更新日志",
+   "pub": "10-17 00:00"
+  },
+  {
+   "title": "DeepSeek-V4.1-Flash-1017 发布，多基准成绩提升且 API 价格不变",
+   "link": "https://aihot.news/items/w34qm27sedtziwxig5ub9wwhr",
+   "summary": "DeepSeek 将 V4.1 Flash 升级至 DeepSeek-V4.1-Flash-1017，网页端与 APP 同步更新，API 调用方式与价格不变，仍用 deepseek-flash 访问。",
+   "category": "AI 模型",
+   "source": "DeepSeek：API 更新日志",
+   "pub": "10-17 00:00"
+  },
+  {
+   "title": "a16z 图表周报：智能体购物遭电商拦截，消费意愿仍滞后",
+   "link": "https://aihot.news/items/j5vlb3dn14h2b4xy1hbdschyc",
+   "summary": "a16z 图表周报指出智能体商务遇阻，Cloudflare 数据显示智能体与爬虫收到的 403 拒绝响应自夏季起明显增多，约为原先两倍。文章引用 NRF 数据称退货率与退货成本自 2019 年以来分别翻倍和增至三倍，并引用调查指 42% 消费者完全不信任 AI 代购，Similarweb 数据显示 AI 购物多发生在发现与购买之间的中间阶段，而非下单环节。",
+   "category": "观点",
+   "source": "a16z：News",
+   "pub": "10-16 22:00"
+  },
+  {
+   "title": "NVIDIA RTX Spark 笔记本今日开售，主打 128GB 统一内存与本地 AI",
+   "link": "https://aihot.news/items/rq32az1hr7zpbipiyega9ehjr",
+   "summary": "NVIDIA 宣布 RTX Spark 笔记本正式开售，来自 ASUS、Dell、HP、Lenovo、Microsoft 和 MSI，起价 $2,599。",
+   "category": "AI 产品",
+   "source": "NVIDIA：Newsroom",
+   "pub": "10-16 20:00"
+  },
+  {
+   "title": "商务部、科技部拟在出口技术目录增列23项人工智能技术并征意见",
+   "link": "https://aihot.news/items/p11tj593iq5nrtiotvoxllop4",
+   "summary": "商务部、科技部发布2026年第48号公告，就修订《中国禁止出口限制出口技术目录》公开征求意见，拟增列人工智能、生物医药、光伏共40项技术，其中禁止出口14项、限制出口26项，并对相关技术实施出口前登记的临时管理措施。",
+   "category": "行业动态",
+   "source": "IT之家·人工智能",
+   "pub": "10-16 16:23"
+  },
+  {
+   "title": "Waymo 宣布进军多伦多，计划2028年迎接首批乘客",
+   "link": "https://aihot.news/items/xwgy3mhme6nur9kndswxlu0es",
+   "summary": "Waymo 宣布进入加拿大，将在多伦多布局完全自动驾驶出行服务，目标2028年迎接首批乘客。近期将先以人工驾驶方式采集高精地图并由自动驾驶专家进行测试；Waymo 与 Element Fleet Management 合作提供车队管理服务，将逐步创造数百个岗位。官方称基于超4亿公里完全自动驾驶里程，其车辆在严重伤害及以上事故中比人类驾驶少95%。",
+   "category": "行业动态",
+   "source": "Waymo：Blog",
+   "pub": "10-16 15:00"
+  },
+  {
+   "title": "丹麦最高法院裁定持有传播 AI 生成儿童色情内容可判实刑",
+   "link": "https://aihot.news/items/bvljy29i9xwh3wnkwign3npt4",
+   "summary": "据彭博社 15 日报道，丹麦最高法院维持对一名 31 岁男子 18 个月监禁的判决，该男子因持有并传播 3.6 万余张 AI 生成的儿童色情图像获刑，且不适用缓刑。法院裁定，即使图像无真实人物原型，也受丹麦《刑法》约束，量刑时不应考虑人物是否虚构；此案为丹麦首起此类定罪，并引发跨国调查，警方查明 273 名买家身份、逮捕 25 人。",
+   "category": "行业动态",
+   "source": "IT之家·人工智能",
+   "pub": "10-16 14:14"
+  },
+  {
+   "title": "Kling 4.0 深夜上线，作者实测30秒一镜到底与全能参考表现",
+   "link": "https://aihot.news/items/kbccvteado5kgzbk5ah9yv5ip",
+   "summary": "可灵AI凌晨正式上线视频模型 Kling 4.0，作者烧数万积分实测后认为其在大范围动态、复杂动作衔接和全能参考可控性上有扎实进步。支持最长30秒一镜到底直出，视频首尾帧改为最多10帧的多帧参考；1080P 30秒约450积分，720P 20秒的 Kling 4.0 Flash 仅120积分，作者推荐先用 Flash 打样再用正式版出片，此外10-bit 4K HDR 输出规格尚未上线。",
+   "category": "AI 产品",
+   "source": "卡兹克",
+   "pub": "10-16 10:03"
+  },
+  {
+   "title": "消息称投资者下调 Anthropic IPO 估值预期，从约 2 万亿美元降至约 1.5 万亿美元",
+   "link": "https://aihot.news/items/ldwt1jervkxlsh99322u661fc",
+   "summary": "路透社援引知情人士消息称，Anthropic 公布最新财务数据后，部分投资者开始考虑下调其 IPO 估值，此前预期 11 月上市时估值约 2 万亿美元，投资者日活动讨论约 1.5 万亿美元。",
+   "category": "行业动态",
+   "source": "IT之家·人工智能",
+   "pub": "10-16 08:54"
+  },
+  {
+   "title": "可灵 Kling 4.0 深夜上线，支持30秒一镜到底直出",
+   "link": "https://aihot.news/items/m4lwilxklwi3f3ctdlvxmzlxw",
+   "summary": "可灵AI正式上线视频模型 Kling 4.0，9月底曾向部分黑金年卡及Ultra年订用户开放4.0 Flash尝鲜版。作者实测后认为提升集中在三方面：最长30秒一镜到底直出，城市追逐、马戏团等复杂场景中人物与纸箱接触的物理形变等细节表现更好；大范围动态和复杂打斗的动作衔接、镜头临场感相较前代明显提升；视频首尾帧改为最多10帧的多帧参考，全能参考可替换运镜、场景和人物。",
+   "category": "AI 模型",
+   "source": "公众号：数字生命卡兹克",
+   "pub": "10-16 08:18"
+  },
+  {
+   "title": "PromptArmor 研究称开放权重模型遭间接提示词注入攻击的易感率高 88%",
+   "link": "https://aihot.news/items/y1c13l53cd5u3wg565qu60q4d",
+   "summary": "PromptArmor 在 9800 次试验的评测中发现，开放权重模型（DeepSeek、Kimi、GLM、Qwen）对真实世界间接提示词注入攻击链的易感率为 26.7%，闭源模型（GPT、Claude、Gemini）为 14.2%，开放权重模型易感率高 88%。",
+   "category": "论文",
+   "source": "PromptArmor：Threat Intelligence",
+   "pub": "10-16 08:00"
+  }
+ ]
+}
