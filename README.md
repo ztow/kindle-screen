@@ -5,9 +5,9 @@
 ## 链路
 
 ```
-GitHub Actions（整点）──> data/live.json ──┐
-                                          ├──> GitHub Pages ──> Kindle 浏览器
-Mac launchd（整点）─────> data/local.json ┘
+GitHub Actions（每 3 小时）──> data/live.json ──┐
+                                              ├──> GitHub Pages ──> Kindle 浏览器
+WorkBuddy 自动化（每天早 8 点）─> data/local.json ┘
 ```
 
 - **live.json**：哈尔滨天气 + AIHOT 新闻，Actions 在 GitHub 服务器上抓，跟 Mac 无关
@@ -17,20 +17,22 @@ Mac launchd（整点）─────> data/local.json ┘
 ## 在你 Mac 上启用（一次性）
 
 ```bash
-# 1. 克隆到固定位置（plist 里写的也是这个路径，换位置就改 plist）
-git clone git@github.com:ztow/kindle-screen.git ~/kindle-screen
+# 1. 克隆（用 HTTPS；SSH 在部分网络环境不通）
+git clone https://github.com/ztow/kindle-screen.git ~/kindle-screen
 cd ~/kindle-screen
-mkdir -p logs
 
-# 2. 手动试跑一次（会弹「允许控制日历/提醒事项」的隐私授权框，点允许）
+# 2. 让裸 git push 复用 gh 的登录态（WorkBuddy 自动化推送时要用）
+git config credential.helper '!gh auth git-credential'
+
+# 3. 手动试跑一次（会弹「允许控制日历/提醒事项」的隐私授权框，点允许）
 /opt/homebrew/bin/python3 scripts/fetch_local.py
-
-# 3. 装定时任务（北京时间 0/3/6/9/12/15/18/21 点整跑；Mac 睡着错过，唤醒后补跑）
-cp com.ztow.kindlescreen.plist ~/Library/LaunchAgents/
-launchctl load ~/Library/LaunchAgents/com.ztow.kindlescreen.plist
 ```
 
-日志在 `~/kindle-screen/logs/local.log` 和 `local.err.log`。
+## 定时更新（已配好）
+
+- **日历/待办**：WorkBuddy 自动化任务「Kindle 信息屏 · 每日更新日历待办」，每天早 8:00 跑一次 `scripts/fetch_local.py` 并推送。想改时间：WorkBuddy → 自动化 → 找到该任务改触发时间
+- **天气/新闻**：GitHub Actions 每 3 小时（北京时间 0/3/6/9/12/15/18/21 点整）自己抓自己提交，跟 Mac 在不在线无关
+- 注意：本机数据一天一更，当天新增的日程/待办要等第二天早上才上屏；天气/新闻始终是 3 小时内新鲜的
 
 ## Kindle 侧
 
@@ -48,7 +50,7 @@ launchctl load ~/Library/LaunchAgents/com.ztow.kindlescreen.plist
 | 日程条数 | `scripts/fetch_local.py` 顶部 `MAX_EVENTS` |
 | local.json 不要 base64 包装 | `scripts/fetch_local.py` 顶部 `OBFUSCATE = False` |
 
-改完 `fetch_live.py` 推送即生效（Actions 下次整点跑）；改完 `fetch_local.py` 要重新 `launchctl unload` 再 `load`。
+改完 `fetch_live.py` 推送即生效（Actions 下次整点跑）；改完 `fetch_local.py` 推送后，在 `~/kindle-screen` 里 `git pull` 一下（自动化每次拉最新代码跑）。
 
 ## 手动触发
 
@@ -62,6 +64,6 @@ launchctl load ~/Library/LaunchAgents/com.ztow.kindlescreen.plist
 ## 排障
 
 - **Kindle 打不开 github.io**：2014 年的浏览器 TLS 根证书可能太老。先拿手机/电脑确认网址本身通；Kindle 上不行就得换方案（Mac 本地服务 / 越狱）
-- **launchd 静默不跑**：多半是隐私授权没给到 launchd 上下文。手动跑一次 `scripts/fetch_local.py` 授权后重试；仍不行就把「读日历+待办」改成一个「快捷指令」定时自动化产出 JSON，launchd 只负责 git push
+- **WorkBuddy 自动化失败**：看自动化的运行记录报错。常见两种：① git 认证失败——确认 `~/kindle-screen` 里配了 `git config credential.helper '!gh auth git-credential'`；② osascript 隐私授权没给上——在 Terminal 里手动跑一次 `~/kindle-screen/scripts/fetch_local.py`，弹窗点允许
 - **Actions 失败**：仓库 Actions 页看日志，多半是网络抖动，重跑即可
 - **页面显示空**：`data/local.json` 还是初始占位符，等 Mac 侧首跑；`data/live.json` 等 Actions 首跑（约 1 分钟）

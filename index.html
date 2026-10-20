@@ -51,13 +51,13 @@ font-family:"Helvetica Neue",Helvetica,Arial,"Heiti SC","STHeiti","Microsoft YaH
 </head>
 <body>
 
-<div id="scr-clock" class="screen on">
+<div id="scr-clock" class="screen">
   <div class="wx" id="wx"></div>
   <div class="clock-big" id="clock-big">--:--</div>
   <div class="date-big" id="date-big"></div>
 </div>
 
-<div id="scr-panel" class="screen">
+<div id="scr-panel" class="screen on">
   <div class="panel-top">
     <div class="cal">
       <div class="box-title">日程</div>
@@ -80,8 +80,8 @@ font-family:"Helvetica Neue",Helvetica,Arial,"Heiti SC","STHeiti","Microsoft YaH
 </div>
 
 <div id="tabbar">
-  <div class="tab on" id="tab-clock">时钟</div>
-  <div class="tab" id="tab-panel">面板</div>
+  <div class="tab" id="tab-clock">时钟</div>
+  <div class="tab on" id="tab-panel">面板</div>
   <div class="tab" id="tab-news">新闻</div>
 </div>
 
@@ -128,7 +128,7 @@ function show(name){
 var saved=null,ok=false;
 try{saved=localStorage.getItem('ks-tab');}catch(e2){}
 if(saved){for(var i=0;i<TABS.length;i++){if(TABS[i]===saved){ok=true;}}}
-show(ok?saved:'clock');
+show(ok?saved:'panel');
 $('tab-clock').onclick=function(){show('clock');};
 $('tab-panel').onclick=function(){show('panel');};
 $('tab-news').onclick=function(){show('news');};
