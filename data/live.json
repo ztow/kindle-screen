@@ -1,23 +1,39 @@
 {
- "generated_at": "2026-10-20 22:55",
+ "generated_at": "2026-10-21 03:48",
  "weather": {
   "city": "哈尔滨",
-  "temp": 2,
+  "temp": -1,
   "desc": "晴",
-  "feels": -3,
-  "humidity": 59,
-  "wind": 11,
-  "hi": 8,
-  "lo": 1
+  "feels": -5,
+  "humidity": 73,
+  "wind": 9,
+  "hi": 5,
+  "lo": -2
  },
  "news": [
   {
-   "title": "Meta Muse 分享链接设计缺陷致用户隐私对话可被枚举发现",
-   "link": "https://aihot.news/items/qkvd1dip3f1qzawvq1yo7yalk",
-   "summary": "安全公司 Claroc 的研究人员发现，Meta 的 AI 智能体 Muse 的对话分享链接存在隐私风险，仅用一次查询就枚举出 6800 个分享链接，打开其中数百个后发现贷款申请、收入报表、员工假期日历等敏感内容。",
-   "category": "行业动态",
-   "source": "Ars Technica：AI",
-   "pub": "10-20 20:33"
+   "title": "fal 发布 FLUX 3 Max，图生视频 Elo 达 1139 并列第一",
+   "link": "https://aihot.news/items/h3p20nlx7t5fr27k4viwlnpty",
+   "summary": "fal 发布与 Black Forest Labs 合作后训练的视频模型 FLUX 3 Max，在第三方独立人类偏好评测中获 1139 Elo，与 Seedance 2.5 并列图生视频质量第一梯队。该模型约 12 秒生成一段 10 秒 720/768p 视频，未来三周降价 75%，后续还将继续后训练改进。",
+   "category": "AI 模型",
+   "source": "fal",
+   "pub": "10-21 01:42"
+  },
+  {
+   "title": "Perplexity Computer 现可在 Mac 上完全本地运行，无需云端推理",
+   "link": "https://aihot.news/items/zs3zvf51jl6pa35kn4npmoy7j",
+   "summary": "Perplexity CEO Aravind Srinivas 宣布，Perplexity Computer 现可在 Mac 上完全本地运行，无需云端推理，也不用 WiFi。模型和智能体都在本机运行，可操作 Mac 原生应用和本地文件，敏感数据不必发送到云端，现已在 Perplexity Mac 应用中可用。",
+   "category": "AI 产品",
+   "source": "Aravind Srinivas",
+   "pub": "10-21 00:34"
+  },
+  {
+   "title": "Google 与 Meta 发布 TorchTPU：PyTorch 原生 TPU 后端",
+   "link": "https://aihot.news/items/lh8vm7yp332xoffhqoscusss4",
+   "summary": "Google 与 Meta 发布开源项目 TorchTPU，为 Google TPU 提供原生 PyTorch 后端，模型迁移只需把 .to(\"cuda\") 改为 .to(\"tpu\")。",
+   "category": "AI 产品",
+   "source": "PyTorch：Blog",
+   "pub": "10-21 00:00"
   },
   {
    "title": "美国陆军网络司令部 ECHOTRIBBLE 项目拟将 AI 智能体变成自主扩散的网络武器",
@@ -52,6 +68,14 @@
    "pub": "10-20 16:06"
   },
   {
+   "title": "Ai2 发布 FairStress 基准：测量 LLM 决策中被隐藏的公平性不对称",
+   "link": "https://aihot.news/items/cszm6fv1o99q04dbffzx8qqio",
+   "summary": "Ai2 发布 FairStress 基准，通过 300 个两候选决策场景和对抗前缀，测量 LLM 在面对说服性论据时改变决策的难易是否因候选人所属人口群体而不同，全部组合超过 1300 万测试用例，并已开放下载、集成进 Olmo-eval。",
+   "category": "论文",
+   "source": "Ai2 / Allen Institute for AI",
+   "pub": "10-20 16:00"
+  },
+  {
    "title": "Waymo 宣布进军西班牙，2027 年在马德里大区迎接首批乘客",
    "link": "https://aihot.news/items/mnqboa5pusqz9brarpfutz57b",
    "summary": "Waymo 宣布为在西班牙马德里大区推出全自动驾驶出行服务奠定基础，目标 2027 年迎来首批乘客。未来数日其电动 Jaguar I-PACE 车辆将现身当地街头，先以人工驾驶开始，再由当地受训的自动驾驶专家进行技术验证。Waymo 称已累计完成逾 2000 万次行程、400 万公里全自动驾驶里程，在其运营城市中涉及重伤或更严重事故的比例比人类司机低 95%。",
@@ -76,20 +100,20 @@
    "pub": "10-20 08:26"
   },
   {
+   "title": "Databricks 发布 MemCurrent 生产级 Agent 持久记忆架构",
+   "link": "https://aihot.news/items/v26pyuir21k0m4r02acyz6v4g",
+   "summary": "Databricks 介绍 MemCurrent，一种面向生产 Agent 的持久记忆架构，结合情景记忆与派生记忆，通过插件、工具调用和离线 dreaming 管线三种访问模式读写与整合记忆，已用于 Agent Bricks Memory 和 Genie。",
+   "category": "AI 产品",
+   "source": "Databricks：Blog",
+   "pub": "10-20 08:00"
+  },
+  {
    "title": "FBI 称前 OpenAI 工程师涉嫌窃密，手机中发现 Saudi Gov Docs 文件夹",
    "link": "https://aihot.news/items/b80bl8763pqoqq8hdio0ew6t1",
    "summary": "美国法院批准羁押被指控在 OpenAI 会议室安装窃听器的前工程师 Abdulrahman Alfozan。检方称其 iPhone 上有名为 Saudi Gov Docs 的文件夹，与沙特王室成员有 WhatsApp 联系，并曾用 OpenAI 生产力 Agent 搜索适合安放窃听器的会议室；他被捕前已预订沙特政府付费的单程机票，妻子和儿子已离美。",
    "category": "行业动态",
    "source": "Ars Technica：AI",
    "pub": "10-20 04:21"
-  },
-  {
-   "title": "fal 联合 bfl_ai 发布后训练视频模型 FLUX 3 Max",
-   "link": "https://aihot.news/items/qldoluc73m0j8mo7u0ttf95km",
-   "summary": "fal 发布与 @bfl_ai 合作的最新后训练视频模型 FLUX 3 Max，在第三方 image-to-video 质量评测中并列第一，生成 10 秒 720/768p 视频约需 12 秒。未来三周该模型 75% 折扣，标注为同质量级别最便宜的前沿视频模型。",
-   "category": "AI 模型",
-   "source": "fal",
-   "pub": "10-20 02:34"
   },
   {
    "title": "DeepSeek-V4.1-Flash-20261017 (Max) 登顶 Agent Arena 开源模型第一",
@@ -124,11 +148,43 @@
    "pub": "10-20 00:14"
   },
   {
+   "title": "Tessl 团队分享：不再逐行审查 AI 生成代码，改为验证意图",
+   "link": "https://aihot.news/items/xil73ls42cqpszvsiuq6u41mj",
+   "summary": "Tessl 工程师 Ankit Jain 分享团队 PR 量翻四倍、代码几乎全部由 AI 生成后，放弃逐行 diff 审查、改为在代码生成前审查意图并逐条验证验收标准的做法。关键实践包括维护 offer-skill 技能理解代码变更，以及把重复出现最多的审查评论固化成机器自动执行的不变量规则，作者预计第二个月起审查负担明显缩小。",
+   "category": "教程",
+   "source": "Tessl：产品与工程博客",
+   "pub": "10-20 00:00"
+  },
+  {
    "title": "Anthropic 用 Claude 设计出针对蝎子神经毒素的蛋白质迷你结合剂",
    "link": "https://aihot.news/items/oxl50pfymja6rgxkem3y0de9j",
    "summary": "Anthropic 让内部研究模型在 Claude Science 中主要自主运行 64 小时，设计针对五种蝎子神经毒素的蛋白质迷你结合剂，共生成 318,484 个设计、筛选出 180 个。",
    "category": "论文",
    "source": "Anthropic：Research",
+   "pub": "10-20 00:00"
+  },
+  {
+   "title": "Google 发布 vLLM 与 SGLang 的 TorchTPU 原生推理引擎",
+   "link": "https://aihot.news/items/mlusnw9gi199uld4ixj58m2cz",
+   "summary": "Google 在 PyTorch 相关公告中推出基于 TorchTPU 的 vLLM 和 SGLang 原生 PyTorch 推理引擎，分别与 Inferact、RadixArk 合作开发，让开发者用熟悉的 PyTorch 工具在 TPU 上部署模型。",
+   "category": "AI 产品",
+   "source": "Google Developers Blog",
+   "pub": "10-20 00:00"
+  },
+  {
+   "title": "METR 评测 Anthropic 2026 年 8 月风险报告对齐章节，认可低风险结论但质疑评估方法",
+   "link": "https://aihot.news/items/kvok7sv5ddw0i5n62gbtuwtt3",
+   "summary": "METR 发布对 Anthropic 2026 年 8 月风险报告“高风险场景中的错位”章节的独立外部审查，基本同意截至 2026 年 7 月 15 日 Mythos 5 和内部模型 Model 2 的灾难性错位风险为低，但认为这主要源于模型能力有限而非安全防护。",
+   "category": "论文",
+   "source": "METR：Blog",
+   "pub": "10-20 00:00"
+  },
+  {
+   "title": "Google 发布 TorchTitan TPU 分叉并给出模型优化 Playbook",
+   "link": "https://aihot.news/items/h4dx2g41nbw5jofprsfwr2xmq",
+   "summary": "Google 推出 TorchTitan TPU 分叉（github.com/google-pytorch/torchtitan），配合 TorchTPU 原生后端在 Cloud TPU 上训练 PyTorch 模型，提供 SimpleFSDP、Graph Trainer、Pallas 内核和优化 Playbook。",
+   "category": "教程",
+   "source": "Google Developers Blog",
    "pub": "10-20 00:00"
   },
   {
@@ -354,62 +410,6 @@
    "category": "AI 产品",
    "source": "NVIDIA：Newsroom",
    "pub": "10-16 20:00"
-  },
-  {
-   "title": "商务部、科技部拟在出口技术目录增列23项人工智能技术并征意见",
-   "link": "https://aihot.news/items/p11tj593iq5nrtiotvoxllop4",
-   "summary": "商务部、科技部发布2026年第48号公告，就修订《中国禁止出口限制出口技术目录》公开征求意见，拟增列人工智能、生物医药、光伏共40项技术，其中禁止出口14项、限制出口26项，并对相关技术实施出口前登记的临时管理措施。",
-   "category": "行业动态",
-   "source": "IT之家·人工智能",
-   "pub": "10-16 16:23"
-  },
-  {
-   "title": "Waymo 宣布进军多伦多，计划2028年迎接首批乘客",
-   "link": "https://aihot.news/items/xwgy3mhme6nur9kndswxlu0es",
-   "summary": "Waymo 宣布进入加拿大，将在多伦多布局完全自动驾驶出行服务，目标2028年迎接首批乘客。近期将先以人工驾驶方式采集高精地图并由自动驾驶专家进行测试；Waymo 与 Element Fleet Management 合作提供车队管理服务，将逐步创造数百个岗位。官方称基于超4亿公里完全自动驾驶里程，其车辆在严重伤害及以上事故中比人类驾驶少95%。",
-   "category": "行业动态",
-   "source": "Waymo：Blog",
-   "pub": "10-16 15:00"
-  },
-  {
-   "title": "丹麦最高法院裁定持有传播 AI 生成儿童色情内容可判实刑",
-   "link": "https://aihot.news/items/bvljy29i9xwh3wnkwign3npt4",
-   "summary": "据彭博社 15 日报道，丹麦最高法院维持对一名 31 岁男子 18 个月监禁的判决，该男子因持有并传播 3.6 万余张 AI 生成的儿童色情图像获刑，且不适用缓刑。法院裁定，即使图像无真实人物原型，也受丹麦《刑法》约束，量刑时不应考虑人物是否虚构；此案为丹麦首起此类定罪，并引发跨国调查，警方查明 273 名买家身份、逮捕 25 人。",
-   "category": "行业动态",
-   "source": "IT之家·人工智能",
-   "pub": "10-16 14:14"
-  },
-  {
-   "title": "Kling 4.0 深夜上线，作者实测30秒一镜到底与全能参考表现",
-   "link": "https://aihot.news/items/kbccvteado5kgzbk5ah9yv5ip",
-   "summary": "可灵AI凌晨正式上线视频模型 Kling 4.0，作者烧数万积分实测后认为其在大范围动态、复杂动作衔接和全能参考可控性上有扎实进步。支持最长30秒一镜到底直出，视频首尾帧改为最多10帧的多帧参考；1080P 30秒约450积分，720P 20秒的 Kling 4.0 Flash 仅120积分，作者推荐先用 Flash 打样再用正式版出片，此外10-bit 4K HDR 输出规格尚未上线。",
-   "category": "AI 产品",
-   "source": "卡兹克",
-   "pub": "10-16 10:03"
-  },
-  {
-   "title": "消息称投资者下调 Anthropic IPO 估值预期，从约 2 万亿美元降至约 1.5 万亿美元",
-   "link": "https://aihot.news/items/ldwt1jervkxlsh99322u661fc",
-   "summary": "路透社援引知情人士消息称，Anthropic 公布最新财务数据后，部分投资者开始考虑下调其 IPO 估值，此前预期 11 月上市时估值约 2 万亿美元，投资者日活动讨论约 1.5 万亿美元。",
-   "category": "行业动态",
-   "source": "IT之家·人工智能",
-   "pub": "10-16 08:54"
-  },
-  {
-   "title": "可灵 Kling 4.0 深夜上线，支持30秒一镜到底直出",
-   "link": "https://aihot.news/items/m4lwilxklwi3f3ctdlvxmzlxw",
-   "summary": "可灵AI正式上线视频模型 Kling 4.0，9月底曾向部分黑金年卡及Ultra年订用户开放4.0 Flash尝鲜版。作者实测后认为提升集中在三方面：最长30秒一镜到底直出，城市追逐、马戏团等复杂场景中人物与纸箱接触的物理形变等细节表现更好；大范围动态和复杂打斗的动作衔接、镜头临场感相较前代明显提升；视频首尾帧改为最多10帧的多帧参考，全能参考可替换运镜、场景和人物。",
-   "category": "AI 模型",
-   "source": "公众号：数字生命卡兹克",
-   "pub": "10-16 08:18"
-  },
-  {
-   "title": "PromptArmor 研究称开放权重模型遭间接提示词注入攻击的易感率高 88%",
-   "link": "https://aihot.news/items/y1c13l53cd5u3wg565qu60q4d",
-   "summary": "PromptArmor 在 9800 次试验的评测中发现，开放权重模型（DeepSeek、Kimi、GLM、Qwen）对真实世界间接提示词注入攻击链的易感率为 26.7%，闭源模型（GPT、Claude、Gemini）为 14.2%，开放权重模型易感率高 88%。",
-   "category": "论文",
-   "source": "PromptArmor：Threat Intelligence",
-   "pub": "10-16 08:00"
   }
  ]
 }
