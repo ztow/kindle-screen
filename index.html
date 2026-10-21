@@ -102,28 +102,32 @@ transform-origin:0 0;-webkit-transform-origin:0 0}
 (function(){
 function $(i){return document.getElementById(i);}
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+/* 时间一律按中国时区（UTC+8）显示：Kindle 浏览器的 JS 时区不可靠（无时区数据时按 UTC 走，
+   会差 8 小时），所以把当前时刻拨快 8 小时、用 UTC 字段读取，即为中国时间；
+   另外用 HTTP 响应的 Date 头校准设备时钟（timeFix），设备时钟不准也能对上。 */
+var CST_OFF=8*3600*1000,timeFix=0;
+function nowCst(){return new Date(Date.now()+timeFix+CST_OFF);}
 var WK=['一','二','三','四','五','六','日'];
 function pad(n){return (n<10?'0':'')+n;}
-function hm(d){return pad(d.getHours())+':'+pad(d.getMinutes());}
-function cdate(d){return (d.getMonth()+1)+'月'+d.getDate()+'日 星期'+WK[d.getDay()==0?6:d.getDay()-1];}
+function hm(){var t=nowCst();return pad(t.getUTCHours())+':'+pad(t.getUTCMinutes());}
+function cdate(){var t=nowCst();return (t.getUTCMonth()+1)+'月'+t.getUTCDate()+'日 星期'+WK[t.getUTCDay()==0?6:t.getUTCDay()-1];}
 
 /* 时钟：只到分，分钟不变不动 DOM */
 var last='';
-function tick(){var s=hm(new Date());if(s!==last){last=s;$('clock-big').innerHTML=s;$('clock-mid').innerHTML=s;}}
+function tick(){var s=hm();if(s!==last){last=s;$('clock-big').innerHTML=s;$('clock-mid').innerHTML=s;}}
 tick();setInterval(tick,1000);
-var now=new Date();
-$('date-big').innerHTML=cdate(now);
-$('date-mid').innerHTML=cdate(now);
+$('date-big').innerHTML=cdate();
+$('date-mid').innerHTML=cdate();
 
-/* 整点重载：0/3/6/9/12/15/18/21 点 */
+/* 整点重载：按中国时间 0/3/6/9/12/15/18/21 点 */
 function nextRefresh(){
-  var d=new Date();
-  var nh=(Math.floor(d.getHours()/3)+1)*3;
-  var t=new Date(d.getFullYear(),d.getMonth(),d.getDate(),nh,0,0,0);
-  var ms=t.getTime()-d.getTime();
+  var t=nowCst();
+  var nh=(Math.floor(t.getUTCHours()/3)+1)*3;
+  var target=Date.UTC(t.getUTCFullYear(),t.getUTCMonth(),t.getUTCDate(),nh,0,0,0)-CST_OFF-timeFix;
+  var ms=target-Date.now();
   if(ms<1000){ms=1000;}
   if(ms>86400000){ms=86400000;}
-  return {ms:ms,label:pad(t.getHours())+':'+pad(t.getMinutes())};
+  return {ms:ms,label:pad(nh%24)+':00'};
 }
 var nr=nextRefresh();
 setTimeout(function(){location.reload(true);},nr.ms);
@@ -147,12 +151,22 @@ $('tab-panel').onclick=function(){show('panel');};
 $('tab-news').onclick=function(){show('news');};
 
 /* 数据读取：兼容明文 JSON 和 base64 两种格式 */
+/* 用 HTTP 响应的 Date 头（GMT）校准设备时钟 */
+function syncServerTime(x){
+  try{
+    var d=x.getResponseHeader('Date');
+    if(d){
+      var e=new Date(d).getTime();
+      if(e>0){timeFix=e-Date.now();}
+    }
+  }catch(e){}
+}
 function load(url,cb){
   var x=new XMLHttpRequest();
   x.open('GET',url+'?_='+Date.now(),true);
   x.onreadystatechange=function(){
     if(x.readyState!==4){return;}
-    if(x.status===200){cb(x.responseText);}else{cb(null);}
+    if(x.status===200){syncServerTime(x);cb(x.responseText);}else{cb(null);}
   };
   x.send(null);
 }
@@ -233,7 +247,7 @@ function fit(){
   var t='translate('+x+'px,0px) scale('+s+')';
   var p=document.getElementById('page');
   if(p._t!==t){p._t=t;p.style.webkitTransform=t;p.style.transform=t;}
-  var d='视口 '+m.w+'×'+m.h+' · 内容 '+PW+'×'+PH+' 缩放 '+s.toFixed(3);
+  var d='视口 '+m.w+'×'+m.h+' · 内容 '+PW+'×'+PH+' 缩放 '+s.toFixed(3)+' · 中国时间 '+hm()+' · 校准 '+Math.round(timeFix/1000)+'s';
   if(p._d!==d){p._d=d;$('debug').innerHTML=d;}
 }
 fit();

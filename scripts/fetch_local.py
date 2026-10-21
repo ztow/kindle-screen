@@ -9,11 +9,12 @@ import base64
 import json
 import os
 import subprocess
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 BASE = Path(__file__).resolve().parent.parent
 OUT = BASE / "data" / "local.json"
+CST = timezone(timedelta(hours=8))
 
 REMINDER_LIST = "待办"   # 提醒事项里的列表名
 MAX_EVENTS = 4
@@ -152,7 +153,7 @@ def push():
 
 def main():
     data = {
-        "generated_at": datetime.now().strftime("%Y-%m-%d %H:%M"),
+        "generated_at": datetime.now(CST).strftime("%Y-%m-%d %H:%M"),
         "events": read_events(),
         "todos": read_todos(),
     }
