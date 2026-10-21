@@ -1,16 +1,24 @@
 {
- "generated_at": "2026-10-22 01:50",
+ "generated_at": "2026-10-22 06:03",
  "weather": {
   "city": "哈尔滨",
   "temp": -1,
   "desc": "晴",
   "feels": -6,
-  "humidity": 72,
-  "wind": 11,
+  "humidity": 71,
+  "wind": 12,
   "hi": 10,
   "lo": -1
  },
  "news": [
+  {
+   "title": "研究人员用 GPT-5.6 Sol 发现 PHP 两个 CVSS 9.2 严重漏洞",
+   "link": "https://aihot.news/items/heuaxyy5ixq9x5wtoobw5wq7e",
+   "summary": "AI 安全公司 Calif 用 GPT-5.6 Sol 在 PHP 中发现两个 CVSS 9.2 严重漏洞，可让无账号攻击者接管 Web 服务器，影响远至 PHP 5.4 的版本，PHP 提前一天紧急发布修复。",
+   "category": "行业动态",
+   "source": "Rohan Paul",
+   "pub": "10-22 01:40"
+  },
   {
    "title": "OpenAI 发布 Codex 技能帮助网站自查 PHP 关键漏洞影响",
    "link": "https://aihot.news/items/b31hjqo2l088vfydp5gcdyv8p",
@@ -116,6 +124,14 @@
    "pub": "10-21 08:00"
   },
   {
+   "title": "Anthropic 开启 Claude Duet 研究预览，Claude 以主动式智能体接管日常工作",
+   "link": "https://aihot.news/items/jgg0i29t3o1eycc24c3wev0fx",
+   "summary": "Anthropic 开启 Claude Duet 研究预览，一款让 Claude 作为主动式智能体工作的独立应用，已登陆 iOS、Android 和 claude.ai，面向美国 Pro 和 Max 用户开放候补名单。",
+   "category": "AI 产品",
+   "source": "Claude：Blog",
+   "pub": "10-21 08:00"
+  },
+  {
    "title": "蚂蚁集团与 vLLM 社区开源量化推理内核库 Humming",
    "link": "https://aihot.news/items/afv7us0zbvzo789rghqkfhq5q",
    "summary": "蚂蚁集团与 vLLM 社区开源通用高性能量化推理内核库 Humming，仓库为 github.com/vllm-project/humming。",
@@ -158,7 +174,7 @@
   {
    "title": "Google 与 Meta 发布 TorchTPU：PyTorch 原生 TPU 后端",
    "link": "https://aihot.news/items/lh8vm7yp332xoffhqoscusss4",
-   "summary": "Google 与 Meta 发布开源项目 TorchTPU，为 Google TPU 提供原生 PyTorch 后端，模型迁移只需把 .to(\"cuda\") 改为 .to(\"tpu\")。",
+   "summary": "Google 与 Meta 联合开源 TorchTPU，为 Google TPU 提供原生 PyTorch 后端，模型只需把 .to(\"cuda\") 改成 .to(\"tpu\") 即可开箱运行，无需 JAX 依赖。",
    "category": "AI 产品",
    "source": "PyTorch：Blog",
    "pub": "10-21 00:00"
@@ -394,22 +410,6 @@
    "category": "行业动态",
    "source": "Ars Technica：AI",
    "pub": "10-19 22:45"
-  },
-  {
-   "title": "黑客用 AI 智能体入侵 John Deere、SharkNinja 等超 100 家网站",
-   "link": "https://aihot.news/items/tdcasw4dwhyzne3hxo3dmizmz",
-   "summary": "AI 安全公司 Norforge 发现一名黑客用开源 AI 平台 Cairn 编排的智能体入侵了超过 100 个网站，据 Reuters 报道受害者包括 John Deere、SharkNinja 和 Cummins。",
-   "category": "行业动态",
-   "source": "The Verge：AI",
-   "pub": "10-19 21:58"
-  },
-  {
-   "title": "n8n 教程：在 NVIDIA DGX Spark 上离线运行全套 AI 工作流",
-   "link": "https://aihot.news/items/ezjbo6ic6xfvpyxyghjekaude",
-   "summary": "n8n 博客发布教程，讲解如何在一台 NVIDIA DGX Spark（128GB 统一内存）上部署七个本地模型，通过 LiteLLM 单一 OpenAI 兼容端点驱动 n8n 工作流，全程不调用云 API。",
-   "category": "教程",
-   "source": "n8n Blog",
-   "pub": "10-19 21:22"
   }
  ]
 }
