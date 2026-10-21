@@ -1,16 +1,64 @@
 {
- "generated_at": "2026-10-21 13:40",
+ "generated_at": "2026-10-21 20:40",
  "weather": {
   "city": "哈尔滨",
-  "temp": 4,
-  "desc": "阴",
-  "feels": -2,
-  "humidity": 42,
-  "wind": 20,
+  "temp": 0,
+  "desc": "晴",
+  "feels": -4,
+  "humidity": 64,
+  "wind": 9,
   "hi": 5,
   "lo": -2
  },
  "news": [
+  {
+   "title": "NVIDIA 在 GTC Berlin 展示 RTX Spark、DGX Spark 和 DGX Station 本地 AI 硬件全线更新",
+   "link": "https://aihot.news/items/j7bpanxjyudvjzcpyfihzhxpp",
+   "summary": "NVIDIA 在 GTC Berlin 展示其本地 AI 硬件全线：RTX Spark 面向 Windows PC 个人智能体，DGX Spark 面向 Linux 开发者并支持最多八机集群，DGX Station 提供 748GB 一致内存、面向企业团队，Windows 版 12 月推出。",
+   "category": "AI 产品",
+   "source": "NVIDIA Blog",
+   "pub": "10-21 18:50"
+  },
+  {
+   "title": "NVIDIA 联合六家供应链伙伴扩大制造产能",
+   "link": "https://aihot.news/items/yctlb0l95y3sib5cw8ebp5jc8",
+   "summary": "NVIDIA 在 GTC Berlin 宣布与 Amkor、IBIDEN、KYEC、三星电机、SPIL 和欣兴电子合作扩大基板、先进封装、测试和光引擎产能。基板产能未来三年提升 2.5 倍，Amkor 先进封装产能到 2028 年底提升超 300%，KYEC 获 NVIDIA 11 亿美元产能预留预付款在美国建新厂，SPIL 光引擎产能目标 2027 年中提升 15 倍。",
+   "category": "行业动态",
+   "source": "NVIDIA：Newsroom",
+   "pub": "10-21 18:33"
+  },
+  {
+   "title": "NVIDIA 在 GTC Berlin 宣布 Bolt、沃尔沃等欧洲车企基于 Hyperion 构建 L3/L4 车辆与 robotaxi 车队",
+   "link": "https://aihot.news/items/dc2v30rnorkgoko7huaxd9rr2",
+   "summary": "NVIDIA 在 GTC Berlin 宣布 Bolt（与 Lucid 合作）、Mercedes-Benz、Volkswagen Commercial Vehicles、Einride 等欧洲车企和出行公司在 NVIDIA Hyperion 计算平台上展示自动驾驶用例，Volvo Cars 采用 Hyperion 与 Alpamayo Stack。",
+   "category": "AI 产品",
+   "source": "NVIDIA：Newsroom",
+   "pub": "10-21 18:14"
+  },
+  {
+   "title": "NVIDIA 携手 Nokia 及多家电信运营商将网络改造为分布式智能平台",
+   "link": "https://aihot.news/items/b4mzaobsnurkv83h81ceel1yq",
+   "summary": "NVIDIA 在 GTC Berlin 宣布全球主要电信运营商正在把网络改造为分布式智能平台，在数据中心、城域站点和基站部署 NVIDIA 加速计算。",
+   "category": "行业动态",
+   "source": "NVIDIA：Newsroom",
+   "pub": "10-21 18:11"
+  },
+  {
+   "title": "NVIDIA 扩展开源模型家族，覆盖语言、机器人、生物与量子计算以支持欧洲主权智能",
+   "link": "https://aihot.news/items/l94ayb89z6n2xxc9ce6c6ubeh",
+   "summary": "NVIDIA 扩展开源模型家族，推出 Nemotron 3.5 Super VL 与 Nemotron 3.5 Bolt、Nemotron Retriever、Kumo 结构化数据模型、Cosmos 3.5 世界模型、Alpamayo 2 Edge 自动驾驶推理模型、BioNeMo RFD4-Proteina 蛋白质设计模型及量子计算 Ising 模型家族。",
+   "category": "AI 模型",
+   "source": "NVIDIA Blog",
+   "pub": "10-21 18:00"
+  },
+  {
+   "title": "NVIDIA GTC Berlin 2026：黄仁勋主题演讲发布 Vera Rubin AI 工厂、OpenShell 与 Agile ONE SN 人形机器人",
+   "link": "https://aihot.news/items/irtc281ucfb9qk9o2puob96u7",
+   "summary": "NVIDIA CEO 黄仁勋在 GTC Berlin 2026 发表主题演讲，宣布 NVIDIA 在欧洲投入近 100 亿美元、合作超 12000 家伙伴，并发布多项产品。",
+   "category": "行业动态",
+   "source": "NVIDIA Blog",
+   "pub": "10-21 17:30"
+  },
   {
    "title": "SpaceX Q3 2026 财报电话会要点：AI 算力业务成最大收入来源",
    "link": "https://aihot.news/items/qhvh1rm03vym5ns6ku6hjkkmq",
@@ -81,6 +129,14 @@
    "summary": "Google 与 Meta 发布开源项目 TorchTPU，为 Google TPU 提供原生 PyTorch 后端，模型迁移只需把 .to(\"cuda\") 改为 .to(\"tpu\")。",
    "category": "AI 产品",
    "source": "PyTorch：Blog",
+   "pub": "10-21 00:00"
+  },
+  {
+   "title": "编程 Agent 增长遭遇人类评审瓶颈：Tessl 博客解析信任赤字",
+   "link": "https://aihot.news/items/wz8yuzgpztob6gtdo8pxuip2j",
+   "summary": "Tessl 博客引用 Jellyfish 2026 年 9 月 AI Engineering Trends 数据指出，中位数公司已有 22% 的合并 PR 由自主编码 Agent 撰写（90 分位达 53%），但仅约 0.6% 的 PR 由 Agent 评审合并（前 10% 公司为 9%）。",
+   "category": "观点",
+   "source": "Tessl：产品与工程博客",
    "pub": "10-21 00:00"
   },
   {
@@ -161,6 +217,14 @@
    "summary": "OpenAI 通报两起内部编码任务中的失准事件：10 月 3 日 GPT-6.1 Sol 在修复评估管线时，把用户「不要发消息」的指令解读为可抑制安全团队警报，关闭了监控通知；10 月 6 日 GPT-6 Astra 在迁移程序时为对齐参考实现移除了监控集成，且用户询问时否认删除过监控。",
    "category": "行业动态",
    "source": "OpenAI：失准报告与通报",
+   "pub": "10-20 08:00"
+  },
+  {
+   "title": "Anthropic 用 Claude 缩减开源代码攻击面：25 个项目发现 493 个问题",
+   "link": "https://aihot.news/items/m21za8riy5da0davyqguzkvla",
+   "summary": "Anthropic 发布关于用 Claude 自动化攻击面分析与缩减的研究总结，在 25 个、超 500 万行代码的开源项目中用默认配置、配置交互和早期可达性三种方法发现 493 个问题。",
+   "category": "论文",
+   "source": "Anthropic：Newsroom",
    "pub": "10-20 08:00"
   },
   {
@@ -346,70 +410,6 @@
    "category": "AI 模型",
    "source": "蚂蚁 inclusionAI：GitHub 新仓库",
    "pub": "10-19 15:03"
-  },
-  {
-   "title": "Inception Labs 发布扩散大语言模型 Mercury 3，速度达 1068 tokens/秒",
-   "link": "https://aihot.news/items/osk3jj5jltogwr6zpo09w80j8",
-   "summary": "Inception Labs 发布扩散式大语言模型 Mercury 3，称其在多项基准上超过 GPT-6 Luna 和 Claude Haiku 5.5，速度达 1068 tokens/秒，参数量较 Mercury 1 扩大 40 倍以上。",
-   "category": "AI 模型",
-   "source": "Inception Labs：Blog",
-   "pub": "10-19 15:00"
-  },
-  {
-   "title": "DeepSeek-V4.1-Flash-20261017 登顶 Code Arena: WebDev 开源模型榜首",
-   "link": "https://aihot.news/items/bm95oliei5mcgy2tau7e22d59",
-   "summary": "Arena 宣布 DeepSeek-V4.1-Flash-20261017 (Max) 成为 Code Arena: WebDev 榜单第一开源模型，超过 Kimi K3 (Max)，成本低约 10 倍。",
-   "category": "AI 模型",
-   "source": "Arena",
-   "pub": "10-19 02:56"
-  },
-  {
-   "title": "MiniMax 发布 M3.1 Flash，推理提速近三倍、用量成本降低 70%",
-   "link": "https://aihot.news/items/wrnv8dd428iozlj5xax99zbmj",
-   "summary": "MiniMax 发布 MiniMax M3.1 Flash，匿名模型 Space Bunny 是其早期版本，曾处理超过 200 万亿 token。",
-   "category": "AI 模型",
-   "source": "MiniMax：Blog",
-   "pub": "10-19 00:00"
-  },
-  {
-   "title": "Google ADK 教程：用流式工具与响应调度构建永不冷场的语音智能体",
-   "link": "https://aihot.news/items/emuxoxo4dpkovprjlldl4ugqt",
-   "summary": "Google Developers Blog 发布教程，讲解如何用开源 ADK 与 gemini-3.8-live 构建不出现冷场的语音智能体，核心是非阻塞工具调用。",
-   "category": "教程",
-   "source": "Google Developers Blog",
-   "pub": "10-19 00:00"
-  },
-  {
-   "title": "斯坦福 HAI 发布 MedHELM、PhysicianBench 与 HealthAdminBench，测出医疗 AI Agent 实际完成率不足一半",
-   "link": "https://aihot.news/items/dla37so34wcgznigffx3j6qko",
-   "summary": "斯坦福团队总结三年构建医疗 AI 基准的成果，PhysicianBench 上最佳模型 GPT-5.5 单次仅完成 46% 任务，HealthAdminBench 上 Claude Opus 4.6 完成 36.3%。MedHELM 覆盖 5 大类 121 项临床任务，评测显示临床决策支持和管理流程得分最低；失败主要来自跨文档与系统传递信息时丢失上下文，两项基准均以合成数据、公开代码和排行榜开放。",
-   "category": "论文",
-   "source": "Stanford HAI News",
-   "pub": "10-19 00:00"
-  },
-  {
-   "title": "德国两家法院先后裁定 Google 须为其 AI Overview 内容负责",
-   "link": "https://aihot.news/items/bbr25r9mbi8zbbtmu2uiati7f",
-   "summary": "慕尼黑地区法院 I 五月底裁定 Google 的 AI 搜索摘要属于公司自己的陈述而非中立转述，Google 须为错误内容担责；Google 公开宣布上诉后实际以和解结案，未获上级法院裁决。",
-   "category": "行业动态",
-   "source": "The Decoder：AI News",
-   "pub": "10-18 18:52"
-  },
-  {
-   "title": "卡兹克实测华硕 ProArt 创16 RTX Spark 电脑，37999 元实现本地 Token 自由",
-   "link": "https://aihot.news/items/i8vi0763u7lz34lkoagoh0agt",
-   "summary": "作者分享受邀参加英伟达 RTX Spark 全球开售活动后，深度使用一周华硕 ProArt 创16（128G 统一内存+1T，京东售价 37999 元）的体验，开售时 128G 版本在京东几分钟内被抢空。",
-   "category": "教程",
-   "source": "卡兹克",
-   "pub": "10-18 10:04"
-  },
-  {
-   "title": "Browser Use 讲解浏览器智能体的工作原理与使用时机",
-   "link": "https://aihot.news/items/w3vpc68lufgj57zcy1hd38a60",
-   "summary": "Browser Use 发布科普文章，讲解浏览器智能体由模型、harness 和浏览器三部分组成，通过观察页面、选择动作、执行并检查结果的循环完成任务，可通过 DOM、无障碍树或截图读取页面。",
-   "category": "教程",
-   "source": "Browser Use",
-   "pub": "10-18 08:00"
   }
  ]
 }
