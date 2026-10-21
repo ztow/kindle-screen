@@ -1,16 +1,48 @@
 {
- "generated_at": "2026-10-21 08:20",
+ "generated_at": "2026-10-21 13:40",
  "weather": {
   "city": "哈尔滨",
-  "temp": 1,
-  "desc": "少云",
-  "feels": -4,
-  "humidity": 61,
-  "wind": 9,
+  "temp": 4,
+  "desc": "阴",
+  "feels": -2,
+  "humidity": 42,
+  "wind": 20,
   "hi": 5,
   "lo": -2
  },
  "news": [
+  {
+   "title": "SpaceX Q3 2026 财报电话会要点：AI 算力业务成最大收入来源",
+   "link": "https://aihot.news/items/qhvh1rm03vym5ns6ku6hjkkmq",
+   "summary": "Rohan Paul 总结 SpaceX Q3 2026 财报电话会要点：Super Intelligence 算力租赁业务（客户含 Anthropic 和 Google）收入 $7.6B，近翻三倍于 Q2 的 $2.56B，超过 Starlink 连接业务的 $5.2B 成最大收入来源，其中 $608M 来自新收购的 Cursor。",
+   "category": "行业动态",
+   "source": "Rohan Paul",
+   "pub": "10-21 12:50"
+  },
+  {
+   "title": "WSJ 披露 Anthropic IPO 草案：上半年收入 163 亿美元、纸面亏损 807 亿美元、约 4500 亿美元算力承诺",
+   "link": "https://aihot.news/items/oiqrjvmo3ausrs9j1ttttsqc5",
+   "summary": "WSJ 看到 Anthropic 的 IPO 草案文件，显示其上半年收入 $16.3B、纸面亏损 $80.7B，并承诺约 $4500 亿算力支出。",
+   "category": "行业动态",
+   "source": "Rohan Paul",
+   "pub": "10-21 12:32"
+  },
+  {
+   "title": "OpenAI API 支持 12 小时 prompt 缓存，Codex 与 Work 用户缓存永久保留",
+   "link": "https://aihot.news/items/gf3h1rt1vsjw3dnw4hxlie3fv",
+   "summary": "OpenAI 开发者账号宣布 API 现已可选 12 小时 prompt 缓存，持续运行的智能体可在请求间隔数小时的情况下继续以更低的缓存输入费率复用指令、工具和上下文。Tibo 补充称，Codex 与 Work 中已登录用户的缓存会永久保留，返回旧对话或数小时后恢复会话保证命中缓存，且无额外惩罚。",
+   "category": "AI 产品",
+   "source": "Tibo",
+   "pub": "10-21 09:10"
+  },
+  {
+   "title": "蚂蚁集团与 vLLM 社区开源量化推理内核库 Humming",
+   "link": "https://aihot.news/items/afv7us0zbvzo789rghqkfhq5q",
+   "summary": "蚂蚁集团与 vLLM 社区开源通用高性能量化推理内核库 Humming，仓库为 github.com/vllm-project/humming。",
+   "category": "AI 产品",
+   "source": "vLLM 官方博客",
+   "pub": "10-21 08:00"
+  },
   {
    "title": "Anthropic 云合作生变：AWS、Google、微软视其为竞争者",
    "link": "https://aihot.news/items/cbzvuf1atk51l7i5c2dpgboao",
@@ -378,38 +410,6 @@
    "category": "教程",
    "source": "Browser Use",
    "pub": "10-18 08:00"
-  },
-  {
-   "title": "SGLang 发布 Low-Latency Mode，通过插件框架在 NVIDIA 和 AMD GPU 上降低推理延迟",
-   "link": "https://aihot.news/items/a1dez7azk8nkmj0mgeb9pep03",
-   "summary": "SGLang 团队推出 Low-Latency Mode，通过插件框架引入专用内核，在 NVIDIA GB300 和 AMD MI355X GPU 上显著降低推理延迟。",
-   "category": "AI 产品",
-   "source": "LMSYS Blog",
-   "pub": "10-18 00:00"
-  },
-  {
-   "title": "WorkBuddy Intl 更新支持 DeepSeek-V4.1-Flash-1017，10 月 31 日前免费",
-   "link": "https://aihot.news/items/xgj246drlw70qbgypibz6atla",
-   "summary": "WorkBuddy Intl 已更新至最新的 DeepSeek-V4.1-Flash-1017 模型，10 月 31 日前免费开放。引用的 DeepSeek 官方内容称该模型相比上一版性能更强、任务完成更快、输出更短，已上线网站、App 和 API，并针对 DeepSeek Harness、Tencent CodeBuddy、WorkBuddy 等做了优化。",
-   "category": "AI 产品",
-   "source": "Tencent WorkBuddy",
-   "pub": "10-17 18:29"
-  },
-  {
-   "title": "卡兹克实测37999元RTX Spark轻薄本：一周实现本地Token自由",
-   "link": "https://aihot.news/items/ffpkck4k06le4smuaz4slhvcz",
-   "summary": "数字生命卡兹克分享华硕ProArt创16（RTX Spark N1X芯片、128G统一内存、37999元）的一周深度使用体验，该机全球开售时128G版本在京东几分钟内被抢空。",
-   "category": "教程",
-   "source": "公众号：数字生命卡兹克",
-   "pub": "10-17 18:19"
-  },
-  {
-   "title": "Anthropic 如何在 Claude 写下 Claude Code 约 90% 代码后重新设计代码评审",
-   "link": "https://aihot.news/items/p4mq9t7wyzlxritu15i6d8dtv",
-   "summary": "作者解读 Anthropic 关于 Claude Code 代码评审重构的博客：Claude 写了约 90% 的代码，2026 年 6 月到 9 月合并 PR 翻倍以上而 revert 率下降超 40%。",
-   "category": "教程",
-   "source": "邵猛",
-   "pub": "10-17 09:52"
   }
  ]
 }
