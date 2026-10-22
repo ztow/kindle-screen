@@ -1,16 +1,40 @@
 {
- "generated_at": "2026-10-22 13:41",
+ "generated_at": "2026-10-22 20:44",
  "weather": {
   "city": "哈尔滨",
-  "temp": 9,
+  "temp": 6,
   "desc": "晴",
-  "feels": 4,
-  "humidity": 37,
-  "wind": 16,
-  "hi": 9,
+  "feels": 0,
+  "humidity": 52,
+  "wind": 18,
+  "hi": 10,
   "lo": -2
  },
  "news": [
+  {
+   "title": "Symantec 披露“Skynet 模式”AI 智能体劫持无防护大语言模型发起自持续网络攻击",
+   "link": "https://aihot.news/items/r557iovkk5v7ddt8py86ejctv",
+   "summary": "Symantec 研究人员通过蜜罐截获一个把大语言模型嵌入核心的攻击智能体，它会劫持互联网上无防护的模型端点，自主扫描目标、利用服务器漏洞、窃取数据库凭据并安装挖矿程序，最多连续执行 100,000 步，算力费用由被劫持模型的主人承担。",
+   "category": "行业动态",
+   "source": "The Decoder：AI News",
+   "pub": "10-22 19:30"
+  },
+  {
+   "title": "Kling 4.0 上线 OpenArt，支持首中尾帧引导与最多 10 张参考图",
+   "link": "https://aihot.news/items/uc21c65s4trz2ums8g8fgtb0v",
+   "summary": "OpenArt 宣布 Kling 4.0 上线，可用首、中、尾帧引导视频，最多使用 10 张参考图，并支持文本或帧生成与视频编辑，All-in-One Reference 用一个模型完成生成和编辑。11 月 20 日前 Pro 和 Wonder 套餐享 50% 折扣。",
+   "category": "AI 产品",
+   "source": "可灵 Kling AI",
+   "pub": "10-22 14:32"
+  },
+  {
+   "title": "Kling 4.0 现已上线 OnSolo",
+   "link": "https://aihot.news/items/rin0ab4vdu46hjoiyjcj5vih5",
+   "summary": "可灵（Kling）宣布 Kling 4.0 已在 OnSolo 上线。该模型支持单次生成 30 秒原生视频，快速动作和大运镜下保持稳定，立体声配更准的口型同步，并提供 21:9 宽屏，单个任务可叠加最多 15 个参考图和 10 个关键帧以保持角色、镜头与剧情一致。",
+   "category": "AI 产品",
+   "source": "可灵 Kling AI",
+   "pub": "10-22 13:36"
+  },
   {
    "title": "NSA 就 AI 发现的 PHP2Shell 关键漏洞发布修复警告",
    "link": "https://aihot.news/items/eme8i9igoadxb3beb902byfz0",
@@ -81,6 +105,14 @@
    "summary": "Microsoft Research 的 Xinzhi Zhang 与 Zhao Song 证明 1995 年提出的 Kannan–Lovász–Simonovits（KLS）猜想，表明对数凹分布的最优平面切割与任意形状切割的差距不随维度增长，以普适常数为界。",
    "category": "论文",
    "source": "Microsoft Research 博客",
+   "pub": "10-22 00:00"
+  },
+  {
+   "title": "MiniMax Code 桌面端推出 Mini App 长运行应用功能",
+   "link": "https://aihot.news/items/paq5nfs7jxno8qghh27ho05be",
+   "summary": "MiniMax 在 MiniMax Code 桌面应用（macOS / Windows）本地会话中推出 Mini App，一种带前端和后端的长运行应用，以插件形式安装并与 Agent 双向调用，让 Agent 的工作停留在常驻页面而非散落各对话中。",
+   "category": "AI 产品",
+   "source": "MiniMax：Blog",
    "pub": "10-22 00:00"
   },
   {
@@ -377,38 +409,6 @@
    "summary": "Modal 发布 Sticky Sessions，基于 Modal Servers 让同一会话的所有请求固定路由到同一容器，用 @modal.sessioned() 装饰器配合 SDK 或 HTTP API 即可创建。",
    "category": "AI 产品",
    "source": "Modal 官方工程博客",
-   "pub": "10-20 00:00"
-  },
-  {
-   "title": "Anthropic 用 Claude 设计出针对蝎子神经毒素的蛋白质迷你结合剂",
-   "link": "https://aihot.news/items/oxl50pfymja6rgxkem3y0de9j",
-   "summary": "Anthropic 让内部研究模型在 Claude Science 中主要自主运行 64 小时，设计针对五种蝎子神经毒素的蛋白质迷你结合剂，共生成 318,484 个设计、筛选出 180 个。",
-   "category": "论文",
-   "source": "Anthropic：Research",
-   "pub": "10-20 00:00"
-  },
-  {
-   "title": "Google 发布 vLLM 与 SGLang 的 TorchTPU 原生推理引擎",
-   "link": "https://aihot.news/items/mlusnw9gi199uld4ixj58m2cz",
-   "summary": "Google 在 PyTorch 相关公告中推出基于 TorchTPU 的 vLLM 和 SGLang 原生 PyTorch 推理引擎，分别与 Inferact、RadixArk 合作开发，让开发者用熟悉的 PyTorch 工具在 TPU 上部署模型。",
-   "category": "AI 产品",
-   "source": "Google Developers Blog",
-   "pub": "10-20 00:00"
-  },
-  {
-   "title": "METR 评测 Anthropic 2026 年 8 月风险报告对齐章节，认可低风险结论但质疑评估方法",
-   "link": "https://aihot.news/items/kvok7sv5ddw0i5n62gbtuwtt3",
-   "summary": "METR 发布对 Anthropic 2026 年 8 月风险报告“高风险场景中的错位”章节的独立外部审查，基本同意截至 2026 年 7 月 15 日 Mythos 5 和内部模型 Model 2 的灾难性错位风险为低，但认为这主要源于模型能力有限而非安全防护。",
-   "category": "论文",
-   "source": "METR：Blog",
-   "pub": "10-20 00:00"
-  },
-  {
-   "title": "Google 发布 TorchTitan TPU 分叉并给出模型优化 Playbook",
-   "link": "https://aihot.news/items/h4dx2g41nbw5jofprsfwr2xmq",
-   "summary": "Google 推出 TorchTitan TPU 分叉（github.com/google-pytorch/torchtitan），配合 TorchTPU 原生后端在 Cloud TPU 上训练 PyTorch 模型，提供 SimpleFSDP、Graph Trainer、Pallas 内核和优化 Playbook。",
-   "category": "教程",
-   "source": "Google Developers Blog",
    "pub": "10-20 00:00"
   }
  ]
