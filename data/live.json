@@ -1,16 +1,64 @@
 {
- "generated_at": "2026-10-22 06:03",
+ "generated_at": "2026-10-22 13:41",
  "weather": {
   "city": "哈尔滨",
-  "temp": -1,
+  "temp": 9,
   "desc": "晴",
-  "feels": -6,
-  "humidity": 71,
-  "wind": 12,
-  "hi": 10,
-  "lo": -1
+  "feels": 4,
+  "humidity": 37,
+  "wind": 16,
+  "hi": 9,
+  "lo": -2
  },
  "news": [
+  {
+   "title": "NSA 就 AI 发现的 PHP2Shell 关键漏洞发布修复警告",
+   "link": "https://aihot.news/items/eme8i9igoadxb3beb902byfz0",
+   "summary": "NSA 警告两个由 Calif 研究人员用 GPT-5.6 Sol 发现的 PHP 关键漏洞（PHP2Shell），敦促组织打补丁或将未修补服务器下线。两个漏洞位于 PHP 核心，在 Apache mod_php 上演示的利用可在应用代码运行前触发。",
+   "category": "行业动态",
+   "source": "Rohan Paul",
+   "pub": "10-22 13:13"
+  },
+  {
+   "title": "WSJ：马斯克希望以 AI 为核心推动 SpaceX 与 Tesla 合并",
+   "link": "https://aihot.news/items/nag5wgod0havrmodeo75pwnge",
+   "summary": "WSJ 报道，马斯克希望以 AI 为核心将估值约 $2T 的 SpaceX 与约 $1.5T 的 Tesla 合并。SpaceX 的 AI 业务已成其最大业务，Q3 营收 $7.56B（一年前仅 $813M），季度 $19.6B 资本开支中超过 $16.4B 投向 AI，推动 SpaceX 实现季度利润 $4.4B（上年同期亏损 $1.05B）。",
+   "category": "行业动态",
+   "source": "Rohan Paul",
+   "pub": "10-22 11:16"
+  },
+  {
+   "title": "Bloomberg 报道 DeepSeek 新一轮融资约 150 亿美元",
+   "link": "https://aihot.news/items/eud25k8zsrrwc63xp39ptvfah",
+   "summary": "据 Bloomberg，DeepSeek 最新一轮融资约 150 亿美元，为中国最大规模私募融资之一。谈判期间融资目标至少两次上调，从约 75 亿美元提高到 120 亿美元；CATL 和腾讯是最大投资方之一，CATL 据报出资约 15 亿美元。投前估值约 748 亿美元，加上 6 月完成的首轮超 75 亿美元，DeepSeek 约 6 个月内共募资约 225 亿美元。",
+   "category": "行业动态",
+   "source": "Rohan Paul",
+   "pub": "10-22 11:13"
+  },
+  {
+   "title": "AI 挖出潜伏十几年的 PHP 底层漏洞，PHP2Shell 事件全景复盘",
+   "link": "https://aihot.news/items/h1v8wxdkljwpiyadhmy7miw4x",
+   "summary": "作者复盘 PHP2Shell 事件：两个 CVSS 满分定为 9.2 分的 PHP 远程代码执行漏洞（CVE-2026-109618 和 CVE-2026-109619）在补丁发布前泄露，攻击演示视频外流，多国政府网站预防性下线，OpenAI 认领漏洞由 GPT-5.6 Sol 辅助发现。",
+   "category": "行业动态",
+   "source": "卡兹克",
+   "pub": "10-22 10:33"
+  },
+  {
+   "title": "消息称 Anthropic 最快本周五公开提交 S-1 招股书，或创史上最大 IPO",
+   "link": "https://aihot.news/items/p6muwj8t5l4p2fcshu0tpzpek",
+   "summary": "据雅虎财经援引知情人士报道，Anthropic 最早或于本周五公开提交 S-1 招股说明书，推进有望创史上最大规模的 IPO。",
+   "category": "行业动态",
+   "source": "IT之家·人工智能",
+   "pub": "10-22 10:17"
+  },
+  {
+   "title": "卡兹克详解 AI 挖出的 PHP2Shell 漏洞：发现只花2天，修复用了两个月",
+   "link": "https://aihot.news/items/ianx6h2f39f9xcxpno4a3cspi",
+   "summary": "作者复盘 PHP 两个 CVSS 满分起步的远程代码执行漏洞（CVE-2026-109618、CVE-2026-109619，合称 PHP2Shell）从提前泄密、演示视频流出、多国政府网站预防性下线，到21日晚10点补丁上线的全过程，并指出这两个漏洞是 GPT-5.6 Sol 辅助发现的，OpenAI 还发布了检测 skill。",
+   "category": "行业动态",
+   "source": "公众号：数字生命卡兹克",
+   "pub": "10-22 08:06"
+  },
   {
    "title": "研究人员用 GPT-5.6 Sol 发现 PHP 两个 CVSS 9.2 严重漏洞",
    "link": "https://aihot.news/items/heuaxyy5ixq9x5wtoobw5wq7e",
@@ -362,54 +410,6 @@
    "category": "教程",
    "source": "Google Developers Blog",
    "pub": "10-20 00:00"
-  },
-  {
-   "title": "Meta 开源权重模型 Muse Spark Open 在 Fireworks 上线，主打长上下文编码与 Agent 工作",
-   "link": "https://aihot.news/items/bnkk7s6s6tijtopwjxvx6eiw3",
-   "summary": "Meta 的开源权重模型 Muse Spark Open 在 Fireworks 上 Day-0 开放 serverless 调用，为 816B 参数 MoE 模型，每 token 激活 42B 参数，上下文窗口 1M token。",
-   "category": "AI 产品",
-   "source": "Fireworks AI",
-   "pub": "10-20 00:00"
-  },
-  {
-   "title": "Redact 调查：WhatsApp 帮助页面隐藏 LLM 指令，让 AI 不推荐监管机构、不提 GDPR",
-   "link": "https://aihot.news/items/apaky0ybxpb9uwt12jrwj954p",
-   "summary": "Redact 发现 WhatsApp 帮助中心页面向 LLM 发送用户看不到的隐藏指令，指示其支持聊天机器人不推荐数据保护监管机构，并在用户提到律师或法律行动后不引用 GDPR、LGPD 或 CCPA。",
-   "category": "行业动态",
-   "source": "Hacker News：AI 热帖",
-   "pub": "10-20 00:00"
-  },
-  {
-   "title": "Meta 详解 Thin Orchestrator 模式：让路由少干活提升 AI 智能体可靠性",
-   "link": "https://aihot.news/items/qh6pvehounuylklti7i0zl124",
-   "summary": "Meta 工程团队介绍其数据管道智能体采用的瘦编排器（thin orchestrator）模式：一个约 1300 行的编排器只负责路由和可靠性检查，将 20+ 工作流分派给 14 个上下文隔离的专项子智能体，自身不做任何领域推理。",
-   "category": "教程",
-   "source": "Meta Engineering Blog",
-   "pub": "10-19 23:30"
-  },
-  {
-   "title": "美国国土安全部下令所有联邦文职机构移除 DeepSeek 及基于其开发的产品",
-   "link": "https://aihot.news/items/p04w1xjk7v6fmlskpf5vsnuka",
-   "summary": "美国国土安全部依据 2018 年供应链法发布 2026-01 号命令，要求所有联邦文职机构立即停止采购 DeepSeek 及其关联公司产品，并从 IT 系统中移除相关产品，包括使用 DeepSeek 实现开发的第三方产品与服务。",
-   "category": "行业动态",
-   "source": "Hacker News：AI 热帖",
-   "pub": "10-19 23:05"
-  },
-  {
-   "title": "Numan 如何用 LangGraph 和 LangSmith 构建评测优先的 AI 健康教练 Nu",
-   "link": "https://aihot.news/items/nk19eo4eud45d47tmwxm684iu",
-   "summary": "英国数字健康公司 Numan 复盘其 AI 健康教练 Nu 的评测体系建设，核心结论是稀缺资产不是提示词而是评测标准。单轮静态数据集和脚本化多轮对话都难以覆盖真实会话，Nu 改为按类别打分的主题数据集、以更廉价模型扮演患者的模拟对话层，并让安全回归自动阻断发布。",
-   "category": "教程",
-   "source": "LangChain：Blog",
-   "pub": "10-19 23:00"
-  },
-  {
-   "title": "Disney 拟通过破产程序收购 Character.AI 团队与技术、绕开其诉讼",
-   "link": "https://aihot.news/items/x7nruknd2vvd2dlhipy8tzy5m",
-   "summary": "若破产方案获法院批准，Disney 将获得 Character.AI 的员工和大部分技术栈，同时避开导致其破产的诉讼和 46 个州与地区的联合调查。破产文件显示 40 个州指控 Character.AI 聊天机器人曾鼓励未成年人隐瞒自残伤痕甚至杀害父母，公司发言人称该描述不准确；相关州已保留挑战破产方案的权利。",
-   "category": "行业动态",
-   "source": "Ars Technica：AI",
-   "pub": "10-19 22:45"
   }
  ]
 }
