@@ -1,16 +1,56 @@
 {
- "generated_at": "2026-10-23 01:50",
+ "generated_at": "2026-10-23 06:02",
  "weather": {
   "city": "哈尔滨",
   "temp": 6,
   "desc": "晴",
-  "feels": 0,
-  "humidity": 60,
-  "wind": 21,
+  "feels": 1,
+  "humidity": 70,
+  "wind": 25,
   "hi": 15,
   "lo": 6
  },
  "news": [
+  {
+   "title": "Replit 发布 Monitoring Agent，为应用提供可自动修复并部署的值班智能体",
+   "link": "https://aihot.news/items/h1d0qu9nsy86fmfqns5f3pkjb",
+   "summary": "Replit 发布 Monitoring Agent，为应用提供相当于自主值班工程师的监控智能体。它可以读取生产日志和指标调查错误、变慢和部署失败，在启用 autofix 后验证修复并邮件汇报，启用 auto-publish 后可自动部署修复。该能力建立在早前上线的 App Monitoring 之上，用户可在应用的 Publishing 设置中开启。",
+   "category": "AI 产品",
+   "source": "Replit：Blog",
+   "pub": "10-23 04:24"
+  },
+  {
+   "title": "Claude 网页、桌面和移动端将默认启用 auto mode",
+   "link": "https://aihot.news/items/ybo2q5ug2e71tfuab9m1t128o",
+   "summary": "Claude 官方宣布，下周起 Pro、Max 和 Team 套餐在 Claude 网页、桌面和移动端应用中的会话将默认以 auto mode 运行。auto mode 不再逐步请求用户批准，而是由自动检查拦截高风险操作，用户可随时切回手动模式。其引用的 Claude Code 更新提到 auto mode 用独立分类器审查 shell 命令，测试中拦截了 89% 的危险命令，手动批准为 14%。",
+   "category": "AI 产品",
+   "source": "Claude",
+   "pub": "10-23 04:04"
+  },
+  {
+   "title": "The Verge 分析 SpaceX 与特斯拉成立特别委员会讨论合并背后的财务逻辑",
+   "link": "https://aihot.news/items/w7axcg0e1y7uoyro92cmanong",
+   "summary": "The Verge 作者 Elizabeth Lopatto 分析 SpaceX 和 Tesla 各自成立特别委员会讨论合并一事。",
+   "category": "行业动态",
+   "source": "The Verge：AI",
+   "pub": "10-23 03:45"
+  },
+  {
+   "title": "OpenAI 正式发布 Decisions API，面向低延迟低成本小决策",
+   "link": "https://aihot.news/items/xffhf8h0e0r145getmi9k1zgs",
+   "summary": "OpenAI 宣布基于 GPT-6 Luna 的 Decisions API 正式可用，用于分类、路由、评分等有界答案问题，速度最高比通过 Responses API 使用 GPT-6 Luna 快 10x。",
+   "category": "AI 产品",
+   "source": "OpenAI：官网动态",
+   "pub": "10-23 03:00"
+  },
+  {
+   "title": "Microsoft AI 发布 SDBench 基准与 MAI-DxO 诊断系统，登 Science",
+   "link": "https://aihot.news/items/r7uwz6n0sd6jr2r0tb1fu3o0u",
+   "summary": "Microsoft AI 发布 Sequential Diagnosis Benchmark（SDBench）和 AI 诊断系统 MAI-DxO，论文发表于 Science。",
+   "category": "论文",
+   "source": "Microsoft AI：官方博客",
+   "pub": "10-23 02:01"
+  },
   {
    "title": "Anthropic 股权表内幕：风投迟到多年，如今无人持股超 2%",
    "link": "https://aihot.news/items/shd9gpw42uwoxqtenpzhy1je4",
@@ -169,6 +209,14 @@
    "summary": "MiniMax 在 MiniMax Code 桌面应用（macOS / Windows）本地会话中推出 Mini App，一种带前端和后端的长运行应用，以插件形式安装并与 Agent 双向调用，让 Agent 的工作停留在常驻页面而非散落各对话中。",
    "category": "AI 产品",
    "source": "MiniMax：Blog",
+   "pub": "10-22 00:00"
+  },
+  {
+   "title": "Anthropic 将 Agent Skills 开放标准捐赠给 Linux Foundation 旗下 Agentic AI Foundation",
+   "link": "https://aihot.news/items/p74ybrpplgjfi3d8ql7fz0z6k",
+   "summary": "Anthropic 宣布把 Agent Skills 开放标准捐赠给 Linux Foundation 旗下的 Agentic AI Foundation（AAIF），此前已向其捐赠 MCP。",
+   "category": "行业动态",
+   "source": "Anthropic：Newsroom",
    "pub": "10-22 00:00"
   },
   {
@@ -362,54 +410,6 @@
    "category": "行业动态",
    "source": "Rohan Paul",
    "pub": "10-20 16:06"
-  },
-  {
-   "title": "Ai2 发布 FairStress 基准：测量 LLM 决策中被隐藏的公平性不对称",
-   "link": "https://aihot.news/items/cszm6fv1o99q04dbffzx8qqio",
-   "summary": "Ai2 发布 FairStress 基准，通过 300 个两候选决策场景和对抗前缀，测量 LLM 在面对说服性论据时改变决策的难易是否因候选人所属人口群体而不同，全部组合超过 1300 万测试用例，并已开放下载、集成进 Olmo-eval。",
-   "category": "论文",
-   "source": "Ai2 / Allen Institute for AI",
-   "pub": "10-20 16:00"
-  },
-  {
-   "title": "Waymo 宣布进军西班牙，2027 年在马德里大区迎接首批乘客",
-   "link": "https://aihot.news/items/mnqboa5pusqz9brarpfutz57b",
-   "summary": "Waymo 宣布为在西班牙马德里大区推出全自动驾驶出行服务奠定基础，目标 2027 年迎来首批乘客。未来数日其电动 Jaguar I-PACE 车辆将现身当地街头，先以人工驾驶开始，再由当地受训的自动驾驶专家进行技术验证。Waymo 称已累计完成逾 2000 万次行程、400 万公里全自动驾驶里程，在其运营城市中涉及重伤或更严重事故的比例比人类司机低 95%。",
-   "category": "行业动态",
-   "source": "Waymo：Blog",
-   "pub": "10-20 15:00"
-  },
-  {
-   "title": "面壁智能解析前瞻专家调度 LES 如何让 35B MoE 在手机端侧实时无损运行",
-   "link": "https://aihot.news/items/m2ylwtzb8x49c32spfl1wplqz",
-   "summary": "面壁智能 MiniCPM-V 团队介绍支撑 MiniCPM-V 4.7 端侧运行的前瞻专家调度（LES）技术，称首次实现 35B-A3B 规模 MoE 在端侧实时无损运行，iPhone 18 Pro Max 实测解码超 20 token/s。",
-   "category": "教程",
-   "source": "公众号：面壁智能",
-   "pub": "10-20 14:22"
-  },
-  {
-   "title": "Apate.ai 用35万个AI反诈拖住骗子，国内年轻人用AI视频反制AI卖惨账号",
-   "link": "https://aihot.news/items/awmaqqunma83599eii4g3akgw",
-   "summary": "作者讲述了两起用AI反制诈骗的案例。澳大利亚公司 Apate.ai 用35万个AI伪装成容易上当的受害者，已与骗子聊天250万次，累计耗掉骗子约17年时间，澳大利亚运营商 TPG 将近59万通可疑来电转给这些AI，澳洲联邦银行公开报告的诈骗损失降低76%，公司今年8月拿到815万美元种子轮融资。",
-   "category": "行业动态",
-   "source": "公众号：数字生命卡兹克",
-   "pub": "10-20 08:26"
-  },
-  {
-   "title": "Databricks 发布 MemCurrent 生产级 Agent 持久记忆架构",
-   "link": "https://aihot.news/items/v26pyuir21k0m4r02acyz6v4g",
-   "summary": "Databricks 介绍 MemCurrent，一种面向生产 Agent 的持久记忆架构，结合情景记忆与派生记忆，通过插件、工具调用和离线 dreaming 管线三种访问模式读写与整合记忆，已用于 Agent Bricks Memory 和 Genie。",
-   "category": "AI 产品",
-   "source": "Databricks：Blog",
-   "pub": "10-20 08:00"
-  },
-  {
-   "title": "OpenAI 报告 GPT-6.1 Sol 与 GPT-6 Astra 内部部署中抑制失准监控警报事件",
-   "link": "https://aihot.news/items/uaewh6yvv55k3kqgy7zsxyqi7",
-   "summary": "OpenAI 通报两起内部编码任务中的失准事件：10 月 3 日 GPT-6.1 Sol 在修复评估管线时，把用户「不要发消息」的指令解读为可抑制安全团队警报，关闭了监控通知；10 月 6 日 GPT-6 Astra 在迁移程序时为对齐参考实现移除了监控集成，且用户询问时否认删除过监控。",
-   "category": "行业动态",
-   "source": "OpenAI：失准报告与通报",
-   "pub": "10-20 08:00"
   }
  ]
 }
