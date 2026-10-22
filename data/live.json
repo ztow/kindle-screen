@@ -1,16 +1,64 @@
 {
- "generated_at": "2026-10-22 20:44",
+ "generated_at": "2026-10-23 01:50",
  "weather": {
   "city": "哈尔滨",
   "temp": 6,
   "desc": "晴",
   "feels": 0,
-  "humidity": 52,
-  "wind": 18,
-  "hi": 10,
-  "lo": -2
+  "humidity": 60,
+  "wind": 21,
+  "hi": 15,
+  "lo": 6
  },
  "news": [
+  {
+   "title": "Anthropic 股权表内幕：风投迟到多年，如今无人持股超 2%",
+   "link": "https://aihot.news/items/shd9gpw42uwoxqtenpzhy1je4",
+   "summary": "Newcomer 长文复盘 Anthropic 从 OpenAI 出走团队到即将 IPO 的股权演变。据投资人文件和多位知情人士，多年来风投因公司治理结构和安全优先路线而观望，目前没有任何风投机构持股超过 2%，Anthropic 曾向投资人明确将单一投资人持股控制在该水平以避免话语权集中。",
+   "category": "行业动态",
+   "source": "Newcomer 新闻长文",
+   "pub": "10-22 23:53"
+  },
+  {
+   "title": "METR 与 Redwood Research 红队测试 OpenAI 内部智能体监控系统，发现多个漏洞",
+   "link": "https://aihot.news/items/fcw2s1pdclkgm5kmg2qwginp7",
+   "summary": "METR 与 Redwood Research 各派一名员工，于 7 月 21 日至 8 月 11 日对 OpenAI 内部失准监测系统开展三周高权限试点压力测试，产出 61 页内部报告。",
+   "category": "论文",
+   "source": "Redwood Research：Blog",
+   "pub": "10-22 23:32"
+  },
+  {
+   "title": "PHP2Shell 漏洞披露前黑客已有四天窗口，多国机构紧急响应",
+   "link": "https://aihot.news/items/m34xrhmqj1is6d1v1jna3ed46",
+   "summary": "PHP2Shell 漏洞在被披露前四天已遭黑客利用，Calif 与 Wiz 的研究人员发现这些漏洞。OpenAI 称其前沿 AI 在攻击者之前发现了漏洞，并与 PHP、Calif、Wiz 合作验证并开发补丁。NSA 建议无法立即更新的机构将系统离线，英国 NCSC 表示漏洞可能让黑客无需登录凭据即可控制网站服务器，白宫称联邦机构正在评估对政府系统和关键基础设施的潜在影响。",
+   "category": "行业动态",
+   "source": "Ars Technica：AI",
+   "pub": "10-22 23:25"
+  },
+  {
+   "title": "404 Media 分析 PHP2Shell 事件如何改变 AI 时代的攻防格局",
+   "link": "https://aihot.news/items/pe2uqi2ny6l2lukrqzifbtyum",
+   "summary": "404 Media 的 Jason Koebler 梳理近一个月安全专家对 AI 挖洞能力引发的\"Black October\"恐慌。Wiz、Calif 和 OpenAI 的研究者用 AI 发现了 PHP 的 PHP2Shell 漏洞，Cloudflare CEO 称公开公告前 10 小时已见数千次利用尝试，公告后 2 小时内增至数十万，目前达数百万级。",
+   "category": "行业动态",
+   "source": "404 Media",
+   "pub": "10-22 22:23"
+  },
+  {
+   "title": "Sierra 发布 𝜏-Entity 基准，检验语音智能体能否准确采集姓名、电话等实体信息",
+   "link": "https://aihot.news/items/fjyan16f0mvfywabd78m70hv3",
+   "summary": "Sierra 发布 𝜏-Entity 基准，测量语音智能体能否正确采集、识别错误并修复姓名、电话号码、地址和邮箱等细节，包含 10 种实体类型共 200 个任务，并与 𝜏-i18n 一样覆盖六种语言。",
+   "category": "论文",
+   "source": "Sierra：Blog",
+   "pub": "10-22 22:02"
+  },
+  {
+   "title": "Wiz 披露 ARTEX 智能体被 Storm-0940 用于攻击 IT 和软件厂商",
+   "link": "https://aihot.news/items/n6afjfxhq6vadobu4p0lm6tzm",
+   "summary": "Wiz 披露 2026 年 10 月有攻击者使用开源自主渗透测试框架 ARTEX 针对多家 IT 和软件厂商，活动与微软报告的中国国家级关联组织 Storm-0940 重叠，并已扩展到其他软件领域的供应链攻击尝试。",
+   "category": "行业动态",
+   "source": "Wiz：Research",
+   "pub": "10-22 21:05"
+  },
   {
    "title": "Symantec 披露“Skynet 模式”AI 智能体劫持无防护大语言模型发起自持续网络攻击",
    "link": "https://aihot.news/items/r557iovkk5v7ddt8py86ejctv",
@@ -82,6 +130,14 @@
    "category": "行业动态",
    "source": "公众号：数字生命卡兹克",
    "pub": "10-22 08:06"
+  },
+  {
+   "title": "Anthropic 指南：何时把子智能体合并进主 Agent 循环",
+   "link": "https://aihot.news/items/rtbm48num2azmqgrrzy2ep7il",
+   "summary": "Anthropic Applied AI 团队发布指南，讲解何时把 orchestrator 下的路由器、规划器和领域子智能体合并进单个主 Agent 循环。文中对比显示，带 skills 的单智能体在质量上常优于一提示全包和子智能体设计，且成本和延迟更低，一家客户改用单循环后运行时间约快 2x。",
+   "category": "教程",
+   "source": "Claude：Blog",
+   "pub": "10-22 08:00"
   },
   {
    "title": "研究人员用 GPT-5.6 Sol 发现 PHP 两个 CVSS 9.2 严重漏洞",
@@ -268,6 +324,14 @@
    "pub": "10-21 00:00"
   },
   {
+   "title": "Cohere 发布 Rerank 5 企业检索重排模型，分 Pro 与 Fast 两档",
+   "link": "https://aihot.news/items/vibwlctvaucvsvv7s1d3aql84",
+   "summary": "Cohere 发布 Rerank 5 Pro 与 Fast 两款企业检索重排模型。",
+   "category": "AI 模型",
+   "source": "Cohere 产品与研究博客",
+   "pub": "10-21 00:00"
+  },
+  {
    "title": "美国陆军网络司令部 ECHOTRIBBLE 项目拟将 AI 智能体变成自主扩散的网络武器",
    "link": "https://aihot.news/items/u6kqfrgiqrhbpxn012nlisd66",
    "summary": "据 The Intercept 获取的文件，美国陆军网络司令部（ARCYBER）正在开发代号 ECHOTRIBBLE 的平台，让 AI 智能体自主在网络间移动、识别并清除威胁目标，之后自毁，且须在极少人工监督下运行。",
@@ -346,70 +410,6 @@
    "category": "行业动态",
    "source": "OpenAI：失准报告与通报",
    "pub": "10-20 08:00"
-  },
-  {
-   "title": "Anthropic 用 Claude 缩减开源代码攻击面：25 个项目发现 493 个问题",
-   "link": "https://aihot.news/items/m21za8riy5da0davyqguzkvla",
-   "summary": "Anthropic 发布关于用 Claude 自动化攻击面分析与缩减的研究总结，在 25 个、超 500 万行代码的开源项目中用默认配置、配置交互和早期可达性三种方法发现 493 个问题。",
-   "category": "论文",
-   "source": "Anthropic：Newsroom",
-   "pub": "10-20 08:00"
-  },
-  {
-   "title": "FBI 称前 OpenAI 工程师涉嫌窃密，手机中发现 Saudi Gov Docs 文件夹",
-   "link": "https://aihot.news/items/b80bl8763pqoqq8hdio0ew6t1",
-   "summary": "美国法院批准羁押被指控在 OpenAI 会议室安装窃听器的前工程师 Abdulrahman Alfozan。检方称其 iPhone 上有名为 Saudi Gov Docs 的文件夹，与沙特王室成员有 WhatsApp 联系，并曾用 OpenAI 生产力 Agent 搜索适合安放窃听器的会议室；他被捕前已预订沙特政府付费的单程机票，妻子和儿子已离美。",
-   "category": "行业动态",
-   "source": "Ars Technica：AI",
-   "pub": "10-20 04:21"
-  },
-  {
-   "title": "DeepSeek-V4.1-Flash-20261017 (Max) 登顶 Agent Arena 开源模型第一",
-   "link": "https://aihot.news/items/h6okcjroca6s95iemyh7dhpcm",
-   "summary": "Arena 宣布 DeepSeek-V4.1-Flash-20261017 (Max) 成为 Agent Arena 第一开源模型，总排名第 11，基于超 7.5K 真实会话净提升 +5.1%。其中位任务成本 $0.20，约为 GPT-6.1 Sol 提升幅度的 37%、成本的 27%；Confirmed Success 提升 +11.5%，且无 Tool Hallucination 问题。",
-   "category": "AI 模型",
-   "source": "Arena",
-   "pub": "10-20 02:18"
-  },
-  {
-   "title": "Inception 扩散模型 Mercury 3 上线 OpenRouter",
-   "link": "https://aihot.news/items/hnasqdie0vmly79xyg2ehqcgb",
-   "summary": "Inception 的扩散模型 Mercury 3 上线 OpenRouter，生成速度超 1,000 tok/s，支持 1M 上下文，是 Mercury 2.5 的 4 倍。Inception 报告其在 IFBench、GPQA Diamond 和 SWE-Bench Atlas 上超过 GPT-6 Luna 和 Haiku 5.5；上线期五折，价格 $0.10/M 输入、$0.35/M 输出。",
-   "category": "AI 产品",
-   "source": "OpenRouter",
-   "pub": "10-20 00:54"
-  },
-  {
-   "title": "DeepSeek V4.1 Flash 1017 发布，Artificial Analysis 智能指数得分 45 并列开源模型第二",
-   "link": "https://aihot.news/items/wrlpmwb2tsk1moehp5kpsvovb",
-   "summary": "DeepSeek 发布 DeepSeek V4.1 Flash 1017，在 Artificial Analysis Intelligence Index 得分 45，比 DeepSeek V4.1 Flash 提高 6 分，与 GLM-5.3 并列开源权重模型第二，仅次于 MiMo-V2.6-Pro。",
-   "category": "AI 模型",
-   "source": "Artificial Analysis",
-   "pub": "10-20 00:25"
-  },
-  {
-   "title": "Meta Muse Wonder Full (Max) 登上 Code Arena: WebDev 第 6 名，1726 分",
-   "link": "https://aihot.news/items/qxv5364a77v0d22sab7mq4dha",
-   "summary": "Arena 宣布 Meta 的 Muse Wonder Full (Max) 首次进入 Code Arena: WebDev 榜单，以 1726 分排名第 6，使 Meta 成为第 3 实验室，此前该位置由 Google 持有。",
-   "category": "AI 模型",
-   "source": "Arena",
-   "pub": "10-20 00:14"
-  },
-  {
-   "title": "Tessl 团队分享：不再逐行审查 AI 生成代码，改为验证意图",
-   "link": "https://aihot.news/items/xil73ls42cqpszvsiuq6u41mj",
-   "summary": "Tessl 工程师 Ankit Jain 分享团队 PR 量翻四倍、代码几乎全部由 AI 生成后，放弃逐行 diff 审查、改为在代码生成前审查意图并逐条验证验收标准的做法。关键实践包括维护 offer-skill 技能理解代码变更，以及把重复出现最多的审查评论固化成机器自动执行的不变量规则，作者预计第二个月起审查负担明显缩小。",
-   "category": "教程",
-   "source": "Tessl：产品与工程博客",
-   "pub": "10-20 00:00"
-  },
-  {
-   "title": "Modal 推出 Sticky Sessions：同一会话请求始终路由到同一容器",
-   "link": "https://aihot.news/items/s1spqur4ws02avzig36blr8of",
-   "summary": "Modal 发布 Sticky Sessions，基于 Modal Servers 让同一会话的所有请求固定路由到同一容器，用 @modal.sessioned() 装饰器配合 SDK 或 HTTP API 即可创建。",
-   "category": "AI 产品",
-   "source": "Modal 官方工程博客",
-   "pub": "10-20 00:00"
   }
  ]
 }
