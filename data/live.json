@@ -1,16 +1,40 @@
 {
- "generated_at": "2026-10-23 13:41",
+ "generated_at": "2026-10-23 20:22",
  "weather": {
   "city": "哈尔滨",
-  "temp": 15,
-  "desc": "多云",
-  "feels": 10,
-  "humidity": 50,
-  "wind": 24,
+  "temp": 12,
+  "desc": "晴",
+  "feels": 8,
+  "humidity": 68,
+  "wind": 21,
   "hi": 15,
   "lo": 5
  },
  "news": [
+  {
+   "title": "OpenAI 下调估值目标至 1.25 万亿美元，拟融资至多 300 亿美元",
+   "link": "https://aihot.news/items/qexf6est4uitwd71p3ugedxo6",
+   "summary": "OpenAI 接近完成至多 300 亿美元的新一轮融资，但将估值目标从最初的 1.4 万亿美元下调至 1.25 万亿美元。",
+   "category": "行业动态",
+   "source": "The Decoder：AI News",
+   "pub": "10-23 17:49"
+  },
+  {
+   "title": "国务院办公厅印发意见：增强 AI 创造就业正面效应，减缓就业替代影响",
+   "link": "https://aihot.news/items/shi5tga503u6jcb3itberbm18",
+   "summary": "国务院办公厅 10 月 23 日印发《关于适应人工智能技术发展助力构建就业友好型发展方式的意见》，提出增强 AI 创造就业机会、赋能传统岗位的正面效应，有效减缓 AI 应用的就业替代影响。",
+   "category": "行业动态",
+   "source": "IT之家·人工智能",
+   "pub": "10-23 17:17"
+  },
+  {
+   "title": "WSJ：OpenAI 因 Signal 阅后即焚聊天解雇 3 名安全研究员",
+   "link": "https://aihot.news/items/mc8widr5lukck9npmgeat917x",
+   "summary": "据 WSJ 报道，OpenAI 安全人员发现 3 名安全研究员与一名外部安全研究员使用阅后即焚的 Signal 聊天后将其解雇。",
+   "category": "行业动态",
+   "source": "Rohan Paul",
+   "pub": "10-23 14:04"
+  },
   {
    "title": "MiniMax 开放 M3.1 Flash 权重：428B 总参数、每 token 激活 23B",
    "link": "https://aihot.news/items/h0u2sgf6ve6eeu0hmswp2a314",
@@ -114,6 +138,14 @@
    "category": "行业动态",
    "source": "The Decoder：AI News",
    "pub": "10-22 19:30"
+  },
+  {
+   "title": "Latent Space 汇总 PHP2Shell 事件：OpenAI Patch the Planet 与 Wiz 各自用 AI 模型独立发现 PHP 核心漏洞",
+   "link": "https://aihot.news/items/ih894crlfahslc0pttsw80r0c",
+   "summary": "Latent Space 的 AI News 汇总了 PHP 核心内存损坏漏洞 PHP2Shell（CVE-2026-109618、CVE-2026-109619）的披露：Calif 研究者在 OpenAI Patch the Planet 项目中用 GPT-5.6 Sol 发现。",
+   "category": "行业动态",
+   "source": "Latent Space",
+   "pub": "10-22 15:42"
   },
   {
    "title": "Kling 4.0 上线 OpenArt，支持首中尾帧引导与最多 10 张参考图",
@@ -378,38 +410,6 @@
    "category": "AI 产品",
    "source": "PyTorch：Blog",
    "pub": "10-21 00:00"
-  },
-  {
-   "title": "编程 Agent 增长遭遇人类评审瓶颈：Tessl 博客解析信任赤字",
-   "link": "https://aihot.news/items/wz8yuzgpztob6gtdo8pxuip2j",
-   "summary": "Tessl 博客引用 Jellyfish 2026 年 9 月 AI Engineering Trends 数据指出，中位数公司已有 22% 的合并 PR 由自主编码 Agent 撰写（90 分位达 53%），但仅约 0.6% 的 PR 由 Agent 评审合并（前 10% 公司为 9%）。",
-   "category": "观点",
-   "source": "Tessl：产品与工程博客",
-   "pub": "10-21 00:00"
-  },
-  {
-   "title": "Cohere 发布 Rerank 5 企业检索重排模型，分 Pro 与 Fast 两档",
-   "link": "https://aihot.news/items/vibwlctvaucvsvv7s1d3aql84",
-   "summary": "Cohere 发布 Rerank 5 Pro 与 Fast 两款企业检索重排模型。",
-   "category": "AI 模型",
-   "source": "Cohere 产品与研究博客",
-   "pub": "10-21 00:00"
-  },
-  {
-   "title": "美国陆军网络司令部 ECHOTRIBBLE 项目拟将 AI 智能体变成自主扩散的网络武器",
-   "link": "https://aihot.news/items/u6kqfrgiqrhbpxn012nlisd66",
-   "summary": "据 The Intercept 获取的文件，美国陆军网络司令部（ARCYBER）正在开发代号 ECHOTRIBBLE 的平台，让 AI 智能体自主在网络间移动、识别并清除威胁目标，之后自毁，且须在极少人工监督下运行。",
-   "category": "行业动态",
-   "source": "The Decoder：AI News",
-   "pub": "10-20 20:32"
-  },
-  {
-   "title": "llm-d 1.0 发布：Kubernetes 原生分布式推理服务走向生产就绪",
-   "link": "https://aihot.news/items/b1pcaa7ceghor24vjgsjagqqd",
-   "summary": "IBM、Red Hat 和 Google 等主导的开源推理项目 llm-d 在 PyTorch Conference North America 上发布 llm-d 1.0，这是一个 Kubernetes 原生的分布式推理服务框架，支持任意模型、任意加速器和任意云。",
-   "category": "AI 产品",
-   "source": "IBM Research：AI",
-   "pub": "10-20 20:00"
   }
  ]
 }
