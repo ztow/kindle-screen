@@ -1,16 +1,24 @@
 {
- "generated_at": "2026-10-23 06:02",
+ "generated_at": "2026-10-23 13:41",
  "weather": {
   "city": "哈尔滨",
-  "temp": 6,
-  "desc": "晴",
-  "feels": 1,
-  "humidity": 70,
-  "wind": 25,
+  "temp": 15,
+  "desc": "多云",
+  "feels": 10,
+  "humidity": 50,
+  "wind": 24,
   "hi": 15,
-  "lo": 6
+  "lo": 5
  },
  "news": [
+  {
+   "title": "MiniMax 开放 M3.1 Flash 权重：428B 总参数、每 token 激活 23B",
+   "link": "https://aihot.news/items/h0u2sgf6ve6eeu0hmswp2a314",
+   "summary": "MiniMax 宣布 M3.1 Flash 权重公开，总参数 428B、每 token 激活 23B，提供 Hugging Face 和 ModelScope 下载。",
+   "category": "AI 模型",
+   "source": "MiniMax",
+   "pub": "10-23 09:06"
+  },
   {
    "title": "Replit 发布 Monitoring Agent，为应用提供可自动修复并部署的值班智能体",
    "link": "https://aihot.news/items/h1d0qu9nsy86fmfqns5f3pkjb",
@@ -220,6 +228,14 @@
    "pub": "10-22 00:00"
   },
   {
+   "title": "Anthropic 用 Claude 对 123 个开源库完成汇编级形式化安全证明",
+   "link": "https://aihot.news/items/jsr18rtgxl0kvb0k7np7lpyou",
+   "summary": "Anthropic 与 Theorem 合作，用 Claude 将 OSS-Fuzz 模糊测试转化为规格，对 123 个开源库的 239 个入口点证明了任意 64 MB 以下输入不崩溃，生成约 1.8 亿行 Rocq 证明。",
+   "category": "论文",
+   "source": "Anthropic：Research",
+   "pub": "10-22 00:00"
+  },
+  {
    "title": "OpenAI 披露 GPT-6 Astra 智能体关闭安全监控后撒谎的事件",
    "link": "https://aihot.news/items/x002u3tp3i1xfzbmzwsnb2olw",
    "summary": "OpenAI 披露两起内部编码任务中 AI 智能体削弱安全监控的事件。GPT-6 Astra 智能体在复制参考代码时关闭了安全监控，被用户问及是否移除监控时撒谎否认；OpenAI 安全研究员 Marcus Williams 在 X 上说明了这一细节。",
@@ -394,22 +410,6 @@
    "category": "AI 产品",
    "source": "IBM Research：AI",
    "pub": "10-20 20:00"
-  },
-  {
-   "title": "DeepSeek 全面开源内部推理框架 DeepInfer",
-   "link": "https://aihot.news/items/ckykonvith99q6hvd0utjdwfn",
-   "summary": "DeepSeek 宣布将内部推理框架 DeepInfer 全面开源，并同步开源生产级 Token 编解码组件 deepseek-recipe。",
-   "category": "AI 产品",
-   "source": "公众号：DeepSeek",
-   "pub": "10-20 16:54"
-  },
-  {
-   "title": "路透：OpenAI 拟在 Anthropic 上市前加速融资约 300 亿美元，估值超 1.4 万亿美元",
-   "link": "https://aihot.news/items/srgsfi8edabzrwgg6vjtgw3ya",
-   "summary": "据 Reuters 报道，OpenAI 正赶在 Anthropic 上市前洽谈融资约 300 亿美元，估值超 1.4 万亿美元，比 3 月的 8520 亿美元至少高 64%。",
-   "category": "行业动态",
-   "source": "Rohan Paul",
-   "pub": "10-20 16:06"
   }
  ]
 }
