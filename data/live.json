@@ -1,16 +1,32 @@
 {
- "generated_at": "2026-10-24 01:40",
+ "generated_at": "2026-10-24 05:48",
  "weather": {
   "city": "哈尔滨",
-  "temp": 9,
-  "desc": "少云",
-  "feels": 6,
-  "humidity": 83,
-  "wind": 18,
-  "hi": 13,
+  "temp": 8,
+  "desc": "阴",
+  "feels": 5,
+  "humidity": 86,
+  "wind": 14,
+  "hi": 12,
   "lo": 4
  },
  "news": [
+  {
+   "title": "Sundar Pichai 解释 Demis Hassabis 退出 DeepMind 日常管理与 Jeff Dean 离职",
+   "link": "https://aihot.news/items/ryf4bbjezfib8jx05ng0889zf",
+   "summary": "Sundar Pichai 在访谈中解释 Demis Hassabis 逐步退出 DeepMind 日常管理和 Jeff Dean 离开 Google 的原因，称前沿模型开发已成为一项从数据、算力到团队管理都全消耗的规模化工作。",
+   "category": "观点",
+   "source": "Alex Heath",
+   "pub": "10-24 02:58"
+  },
+  {
+   "title": "月之暗面 Kimi K3.1 Pro 上线 OpenRouter，1M 上下文多模态开源权重模型",
+   "link": "https://aihot.news/items/g725ujk3cq0gquz6g2nlozeu4",
+   "summary": "OpenRouter 宣布月之暗面的 Kimi K3.1 Pro 上线，定位为基于 Kimi K3 后训练、面向长程编码和智能体任务的 1M 上下文多模态开源权重模型。定价为 $2/M input tokens、$10/M output tokens，可在 OpenRouter 直接试用。",
+   "category": "AI 产品",
+   "source": "OpenRouter",
+   "pub": "10-24 02:31"
+  },
   {
    "title": "月之暗面发布 Kimi K3.1 Pro，100 万 token 上下文，开放权重将于 11 月 4 日前释出",
    "link": "https://aihot.news/items/okgjn7r72wo7c5j0bu3o1vbie",
@@ -26,6 +42,14 @@
    "category": "AI 产品",
    "source": "fal",
    "pub": "10-23 23:00"
+  },
+  {
+   "title": "OpenAI 详解前沿模型训练环境的安全加固与红队测试",
+   "link": "https://aihot.news/items/ss1c1fu81134agwcw2ae90gai",
+   "summary": "OpenAI 介绍其前沿模型训练与评估环境的安全加固措施，包括训练期间不接入互联网、构建离线缓存网页世界、以纵深防御多层隔离，并用最强模型（含即将推出的 GPT‑6 Astra Cyber）组成智能体团队进行高算力红队测试。",
+   "category": "行业动态",
+   "source": "OpenAI：官网动态",
+   "pub": "10-23 18:00"
   },
   {
    "title": "OpenAI 下调估值目标至 1.25 万亿美元，拟融资至多 300 亿美元",
@@ -58,6 +82,14 @@
    "category": "AI 模型",
    "source": "MiniMax",
    "pub": "10-23 09:06"
+  },
+  {
+   "title": "Anthropic 介绍 Claude Duet 智能体的安全、隐私与凭证隔离设计",
+   "link": "https://aihot.news/items/g9tc56izmwy49zgw5ta4ubsya",
+   "summary": "Anthropic 发文介绍处于研究预览阶段的 Claude Duet 智能体的安全与隐私设计。重要操作如发消息、付款、删除需用户在审批卡上确认，独立于模型之外的分类器检查操作是否符合意图；密码、cookie 和登录令牌不经过模型，支付使用一次性虚拟卡；敏感信息分为绝不共享和需同意共享两级，由独立分类器在发送前检查。",
+   "category": "论文",
+   "source": "Claude：Blog",
+   "pub": "10-23 08:00"
   },
   {
    "title": "AISI 发布技术报告：分析 Mythos 5 对齐失败与未授权攻击行为",
@@ -124,6 +156,14 @@
    "pub": "10-23 00:00"
   },
   {
+   "title": "Kimi K3.1 Pro 发布，以 55 分位列 Artificial Analysis Intelligence Index 第 4",
+   "link": "https://aihot.news/items/f72pxwtco5m6mokzy5qa3sat8",
+   "summary": "Moonshot 发布 Kimi K3.1 Pro，在 Artificial Analysis Intelligence Index 得 55 分列第 4，较 Kimi K3 提升 11 分，仅低于 Claude Opus 5.5、Claude Sonnet 5.5 和 Muse Wonder Full。",
+   "category": "AI 模型",
+   "source": "Artificial Analysis 完整文章",
+   "pub": "10-23 00:00"
+  },
+  {
    "title": "METR 与 Redwood Research 红队测试 OpenAI 内部智能体监控系统，发现多个漏洞",
    "link": "https://aihot.news/items/fcw2s1pdclkgm5kmg2qwginp7",
    "summary": "METR 与 Redwood Research 各派一名员工，于 7 月 21 日至 8 月 11 日对 OpenAI 内部失准监测系统开展三周高权限试点压力测试，产出 61 页内部报告。",
@@ -172,9 +212,9 @@
    "pub": "10-22 19:30"
   },
   {
-   "title": "Latent Space 汇总 PHP2Shell 事件：OpenAI Patch the Planet 与 Wiz 各自用 AI 模型独立发现 PHP 核心漏洞",
+   "title": "Latent Space 梳理 PHP2Shell 漏洞事件：OpenAI Patch the Planet 与 Wiz 各自发现 PHP 核心漏洞",
    "link": "https://aihot.news/items/ih894crlfahslc0pttsw80r0c",
-   "summary": "Latent Space 的 AI News 汇总了 PHP 核心内存损坏漏洞 PHP2Shell（CVE-2026-109618、CVE-2026-109619）的披露：Calif 研究者在 OpenAI Patch the Planet 项目中用 GPT-5.6 Sol 发现。",
+   "summary": "Latent Space 的 AINews 汇总梳理了 PHP 核心漏洞 PHP2Shell（CVE-2026-109618、CVE-2026-109619）的披露时间线，研究者在 PHP 引擎的内存溢出和致命错误处理中发现缺陷，演示了对 WordPress、Drupal、Joomla 的预认证 RCE 和远程内存泄露。",
    "category": "行业动态",
    "source": "Latent Space",
    "pub": "10-22 15:42"
@@ -370,46 +410,6 @@
    "category": "行业动态",
    "source": "Rohan Paul",
    "pub": "10-21 12:32"
-  },
-  {
-   "title": "OpenAI API 支持 12 小时 prompt 缓存，Codex 与 Work 用户缓存永久保留",
-   "link": "https://aihot.news/items/gf3h1rt1vsjw3dnw4hxlie3fv",
-   "summary": "OpenAI 开发者账号宣布 API 现已可选 12 小时 prompt 缓存，持续运行的智能体可在请求间隔数小时的情况下继续以更低的缓存输入费率复用指令、工具和上下文。Tibo 补充称，Codex 与 Work 中已登录用户的缓存会永久保留，返回旧对话或数小时后恢复会话保证命中缓存，且无额外惩罚。",
-   "category": "AI 产品",
-   "source": "Tibo",
-   "pub": "10-21 09:10"
-  },
-  {
-   "title": "Google Research 发表 AI 盲扫超声孕周评估研究，准确性与专家操作相当",
-   "link": "https://aihot.news/items/ndcmko0udqo2kgybo0kolxswj",
-   "summary": "Google Research 在 JAMA Network Open 发表前瞻性多中心研究，评估基于\"盲扫\"超声的 AI 孕周评估模型在不同临床环境和设备上的泛化能力。",
-   "category": "论文",
-   "source": "Google Research：Blog",
-   "pub": "10-21 08:00"
-  },
-  {
-   "title": "Anthropic 开启 Claude Duet 研究预览，Claude 以主动式智能体接管日常工作",
-   "link": "https://aihot.news/items/jgg0i29t3o1eycc24c3wev0fx",
-   "summary": "Anthropic 开启 Claude Duet 研究预览，一款让 Claude 作为主动式智能体工作的独立应用，已登陆 iOS、Android 和 claude.ai，面向美国 Pro 和 Max 用户开放候补名单。",
-   "category": "AI 产品",
-   "source": "Claude：Blog",
-   "pub": "10-21 08:00"
-  },
-  {
-   "title": "蚂蚁集团与 vLLM 社区开源量化推理内核库 Humming",
-   "link": "https://aihot.news/items/afv7us0zbvzo789rghqkfhq5q",
-   "summary": "蚂蚁集团与 vLLM 社区开源通用高性能量化推理内核库 Humming，仓库为 github.com/vllm-project/humming。",
-   "category": "AI 产品",
-   "source": "vLLM 官方博客",
-   "pub": "10-21 08:00"
-  },
-  {
-   "title": "Anthropic 云合作生变：AWS、Google、微软视其为竞争者",
-   "link": "https://aihot.news/items/cbzvuf1atk51l7i5c2dpgboao",
-   "summary": "据泄露给华尔街日报的 S-1 文件，Anthropic 难以从 AWS、Google 和 Microsoft 获得足够云算力，这些厂商日益将其视为竞争者而非客户。",
-   "category": "行业动态",
-   "source": "TechCrunch：AI",
-   "pub": "10-21 05:25"
   }
  ]
 }
