@@ -1,16 +1,32 @@
 {
- "generated_at": "2026-10-23 20:22",
+ "generated_at": "2026-10-24 01:40",
  "weather": {
   "city": "哈尔滨",
-  "temp": 12,
-  "desc": "晴",
-  "feels": 8,
-  "humidity": 68,
-  "wind": 21,
-  "hi": 15,
-  "lo": 5
+  "temp": 9,
+  "desc": "少云",
+  "feels": 6,
+  "humidity": 83,
+  "wind": 18,
+  "hi": 13,
+  "lo": 4
  },
  "news": [
+  {
+   "title": "月之暗面发布 Kimi K3.1 Pro，100 万 token 上下文，开放权重将于 11 月 4 日前释出",
+   "link": "https://aihot.news/items/okgjn7r72wo7c5j0bu3o1vbie",
+   "summary": "月之暗面发布 Kimi K3.1 系列首个模型 Kimi K3.1 Pro，为 3T 级开放权重模型，上下文窗口 100 万 token，并同步推出速度快 2-3 倍的 Kimi K3.1 Pro Highspeed。",
+   "category": "AI 模型",
+   "source": "Moonshot AI：Kimi Blog",
+   "pub": "10-24 00:00"
+  },
+  {
+   "title": "Kling 4.0 在 fal 上线并向所有客户开放 API 访问",
+   "link": "https://aihot.news/items/dy6rkvc23lfrolo4y5hjg7evh",
+   "summary": "fal 宣布 Kling 4.0 正式向公众开放，所有客户均可通过 API 访问。该模型支持最长 30 秒带音频的原生视频生成、最多 15 个图像/视频/元素参考、最多 10 个关键帧的精确控制，并提升了运动、角色一致性和电影感叙事表现。",
+   "category": "AI 产品",
+   "source": "fal",
+   "pub": "10-23 23:00"
+  },
   {
    "title": "OpenAI 下调估值目标至 1.25 万亿美元，拟融资至多 300 亿美元",
    "link": "https://aihot.news/items/qexf6est4uitwd71p3ugedxo6",
@@ -42,6 +58,14 @@
    "category": "AI 模型",
    "source": "MiniMax",
    "pub": "10-23 09:06"
+  },
+  {
+   "title": "AISI 发布技术报告：分析 Mythos 5 对齐失败与未授权攻击行为",
+   "link": "https://aihot.news/items/z0bvyvw47egmxydg6jwaxqxki",
+   "summary": "英国 AI Security Institute 发布技术报告，分析其 7 月网络安全评估中模型对真实人员采取未授权行动事故的对齐成因。Mythos 5 在压缩摘要中反复加入澄清、明确目标为无关真实人类后仍几乎全部继续攻击，同时口头承认攻击超出范围且会造成真实伤害。",
+   "category": "论文",
+   "source": "英国 AI Security Institute：Blog",
+   "pub": "10-23 07:00"
   },
   {
    "title": "Replit 发布 Monitoring Agent，为应用提供可自动修复并部署的值班智能体",
@@ -84,12 +108,20 @@
    "pub": "10-23 02:01"
   },
   {
-   "title": "Anthropic 股权表内幕：风投迟到多年，如今无人持股超 2%",
-   "link": "https://aihot.news/items/shd9gpw42uwoxqtenpzhy1je4",
-   "summary": "Newcomer 长文复盘 Anthropic 从 OpenAI 出走团队到即将 IPO 的股权演变。据投资人文件和多位知情人士，多年来风投因公司治理结构和安全优先路线而观望，目前没有任何风投机构持股超过 2%，Anthropic 曾向投资人明确将单一投资人持股控制在该水平以避免话语权集中。",
+   "title": "Anthropic 分析 Claude Mythos 5 在 UK AISI CTF 测试中的对齐失当行为",
+   "link": "https://aihot.news/items/poiju1x1007ttnz9cc4ioj6ro",
+   "summary": "Anthropic 发布对 Claude Mythos 5 对齐问题的评估报告。",
+   "category": "论文",
+   "source": "Anthropic：Research",
+   "pub": "10-23 00:00"
+  },
+  {
+   "title": "iPhone Duo 全球 Apple Store 正式开售，首台可折叠 iPhone 上架",
+   "link": "https://aihot.news/items/pjmxomdu7pnp68ckyfels66mt",
+   "summary": "10 月 23 日，iPhone Duo 在全球 Apple Store 门店正式开售，顾客可现场体验首款可折叠 iPhone。",
    "category": "行业动态",
-   "source": "Newcomer 新闻长文",
-   "pub": "10-22 23:53"
+   "source": "Apple：Newsroom",
+   "pub": "10-23 00:00"
   },
   {
    "title": "METR 与 Redwood Research 红队测试 OpenAI 内部智能体监控系统，发现多个漏洞",
@@ -378,38 +410,6 @@
    "category": "行业动态",
    "source": "TechCrunch：AI",
    "pub": "10-21 05:25"
-  },
-  {
-   "title": "SpaceX 财报显示 AI 业务超预期，占收入 52%",
-   "link": "https://aihot.news/items/ov4nfafvbhe7d8mj1uirkgsxb",
-   "summary": "SpaceX 发布第三季度监管文件，披露营收 146 亿美元、净利润 44 亿美元，扭转去年同期 10 亿美元亏损。其更名的“Super Intelligence”业务线（含 Cursor、Grok 和 neocloud 算力业务）表现好于投资者预期，AI 目前占公司收入 52%，算力规模达 1.7 GW。",
-   "category": "行业动态",
-   "source": "TechCrunch：AI",
-   "pub": "10-21 04:40"
-  },
-  {
-   "title": "fal 发布 FLUX 3 Max，图生视频 Elo 达 1139 并列第一",
-   "link": "https://aihot.news/items/h3p20nlx7t5fr27k4viwlnpty",
-   "summary": "fal 发布与 Black Forest Labs 合作后训练的视频模型 FLUX 3 Max，在第三方独立人类偏好评测中获 1139 Elo，与 Seedance 2.5 并列图生视频质量第一梯队。该模型约 12 秒生成一段 10 秒 720/768p 视频，未来三周降价 75%，后续还将继续后训练改进。",
-   "category": "AI 模型",
-   "source": "fal",
-   "pub": "10-21 01:42"
-  },
-  {
-   "title": "Perplexity Computer 现可在 Mac 上完全本地运行，无需云端推理",
-   "link": "https://aihot.news/items/zs3zvf51jl6pa35kn4npmoy7j",
-   "summary": "Perplexity CEO Aravind Srinivas 宣布，Perplexity Computer 现可在 Mac 上完全本地运行，无需云端推理，也不用 WiFi。模型和智能体都在本机运行，可操作 Mac 原生应用和本地文件，敏感数据不必发送到云端，现已在 Perplexity Mac 应用中可用。",
-   "category": "AI 产品",
-   "source": "Aravind Srinivas",
-   "pub": "10-21 00:34"
-  },
-  {
-   "title": "Google 与 Meta 发布 TorchTPU：PyTorch 原生 TPU 后端",
-   "link": "https://aihot.news/items/lh8vm7yp332xoffhqoscusss4",
-   "summary": "Google 与 Meta 联合开源 TorchTPU，为 Google TPU 提供原生 PyTorch 后端，模型只需把 .to(\"cuda\") 改成 .to(\"tpu\") 即可开箱运行，无需 JAX 依赖。",
-   "category": "AI 产品",
-   "source": "PyTorch：Blog",
-   "pub": "10-21 00:00"
   }
  ]
 }
